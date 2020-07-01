@@ -1,0 +1,108 @@
+.title{
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2E2E2E;
+}
+
+.link{
+    background-image: url(../img/icons/link.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    display: inline-block;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B4B4B4;
+    &:hover{
+        color: #B4B4B4;
+    }
+}
+
+
+
+.date {
+    background-image: url(../img/icons/calendar.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B4B4B4;
+    margin: 20px 0;
+    display: inline-block;
+    &:hover{
+        color: #b4b4b4cc;
+    }
+}
+
+
+.star-rating{
+    background-image: url(../img/icons/star.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+.mob-menu-btn{
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: -23px;
+    cursor: pointer;
+    // top: 43px;
+    .burger{
+        display: block;
+        height: 2px;
+        width: 24px;
+        content: '';
+        background: #fff;
+        border-radius: 50px;
+        position: absolute;
+        top: calc(50% - 2px);
+        &::before{
+            display: block;
+            height: 2px;
+            width: 24px;
+            content: '';
+            background: #fff;
+            border-radius: 50px;
+            position: absolute;
+            top: -6px;
+        }
+        &::after{
+            display: block;
+            height: 2px;
+            width: 24px;
+            content: '';
+            background: #fff;
+            border-radius: 50px;
+            position: absolute;
+            top: 6px;
+        }
+    }
+}
+
+
+
+
