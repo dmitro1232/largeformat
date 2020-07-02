@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.header__slider').slick({
+    $('.header-slider').slick({
         dots: true,
         infinite: true,
         speed: 900,

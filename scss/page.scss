@@ -24,6 +24,83 @@ button {
 
 
 
+.header-home{
+    background: $grad;
+    a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .header-nav{
+        padding: 30px 0;
+        .phone{
+            text-align: right;
+        }
+    }
+
+    .searchline{
+        background: rgba(0, 0, 0, 0.2);
+        padding: 20px 0;
+        .mob-search-btn{
+            display: none;
+        }
+
+        .shadow {
+            display: none;
+            background: rgba(0, 0, 0, 0.692);
+            position: fixed !important;
+            top: -200px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 1000000px;
+            z-index: 20;
+            position: fixed;
+        }
+    
+        .shadow-active {
+            display: block;
+        }
+    }
+
+
+
+    .header-mobile{
+        background: rgba(0, 0, 0, 0.2);
+        padding: 40px 0;
+        display: none;
+        .mob-menu-btn{
+            margin-left: 30px;
+        }
+        .mob-search-btn{
+            display: block;
+            cursor: pointer;
+        }
+        a.profile,
+        a.cart{
+            min-width: 25px;
+            min-height: 25px;
+            display: block;
+            span{
+                display: none;
+            }
+        }
+
+        .menu-mobile{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 .request {
     display: none;
     justify-content: center;

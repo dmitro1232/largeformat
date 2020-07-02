@@ -4,6 +4,18 @@
         max-width: 100% !important;
         margin: 0px 20px;
     }
+    .header-nav{
+        display: none !important;
+    }
+    .searchline{
+        display: none;
+    }
+    .header-mobile{
+        display: block !important;
+        .mob-menu-btn{
+            display: block;
+        }
+    }
 }
 
 
