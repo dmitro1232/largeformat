@@ -16,8 +16,45 @@
             display: block;
         }
     }
+    .slick-dots{
+        display: none !important;
+    }
+    
 }
 
+@media screen and (max-width: 768px){
+    .header-slider {
+        bottom: -30px;
+        
+        .slick-arrow {
+            display: none !important;
+        }
+    
+        .slick-slide {
+            height: 1000px;
+        }
+    
+        .slide {    
+            &__img {
+                justify-content: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 410px){
+    .header-slider {
+        .slick-slide {
+            height: 1030px;
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    .header-mobile{
+        .phone{
+            display: none;
+        }
+    }
+}
 
 
 @media screen and (max-width: 1200px) {
