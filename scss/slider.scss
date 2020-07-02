@@ -1,0 +1,113 @@
+.header-slider {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    // position: absolute;
+    bottom: -60px;
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slick-list {
+        min-height: 550px;
+    }
+
+    .slick-slide {
+        outline: none;
+        padding-bottom: 60px;
+        position: relative;
+        padding: 10px;
+    }
+
+    .slick-dots {
+        bottom: 20px;
+        position: absolute;
+    }
+
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 40px;
+        line-height: 40px;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        content: '•';
+        text-align: center;
+        width: 14px;
+        height: 14px;
+        color: #E8E8E8;
+        opacity: 100 !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .slick-active button:before {
+        color: #fff !important;
+        background: linear-gradient(98.82deg, #2173EF 15.6%, #C03CD6 85.6%);
+    }
+
+    .slide {
+        color: #fff;
+
+        &__title {
+            font-family: $montAlt;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 27px;
+            color: #FFFFFF;
+            margin-top: 40px;
+        }
+
+        &__text {
+            font-family: $opensans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 160%;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        &__btn {
+            outline: none;
+            font-family: $opensans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #2E2E2E;
+            background: #FFFFFF;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+            border: none;
+            padding: 15px 30px;
+            margin-top: 40px;
+            margin-bottom: 80px;
+
+            &:hover {
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &__img {
+            float: right;
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        &__img-r {
+            max-height: 530px;
+            max-width: 100%;
+            position: absolute;
+        }
+    }
+}
