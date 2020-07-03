@@ -53,6 +53,11 @@
     display: inline-block;
 }
 
+.logo{
+    img{
+        max-width: 100%;
+    }
+}
 
 .lang {
     &__list {
@@ -62,6 +67,9 @@
 
     &__item {
         margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
     }
 
     &__link {
@@ -75,6 +83,22 @@
 
     &-active {
         font-weight: 800;
+    }
+}
+@media screen and (max-width: 377px){
+    .sec-pro{
+        a{
+            margin-left: 15px !important;
+            padding-left: 28px !important;
+        }
+        .mob-menu-btn{
+            margin-left: 15px !important;
+        }
+    }
+    .phone{
+        a{
+            font-size: 12px !important;
+        }
     }
 }
 
@@ -166,14 +190,10 @@
 
 .catalog {
     display: none;
-    width: 100%;
     padding: 40px 60px;
     background: #fff;
-    position: absolute;
-    z-index: 100;
     top: 160px;
-    margin: 15px;
-    height: 380px;
+    z-index: 100;
 
     .close {
         position: absolute;

@@ -36,6 +36,50 @@ function noselect() {return false;}
 
 
 
+// Catalog
+$('.btn-catalog').click(function () {
+    $('.shadow').toggleClass('shadow-active');
+    $('.catalog').toggleClass('catalog-active');
+});
+$('.shadow, .close').click(function () {
+    $('.shadow').removeClass('shadow-active');
+    $('.catalog').removeClass('catalog-active');
+});
+// Catalog END
+
+
+// Request
+$('.request-a').click(function () {
+    $('.shadow-req').toggleClass('shadow-active');
+    $('.request').toggleClass('request-active');
+});
+$('.shadow-req, .close-req').click(function () {
+    $('.shadow-req').removeClass('shadow-active');
+    $('.request').removeClass('request-active');
+});
+// Request END
+
+
+// Mobile menu
+$('.mob-menu-btn').click(function () {
+    $('body').toggleClass('body-fixed');
+    $('.mnu-mob-shad').toggleClass('mnu-mob-shad-active');
+    $('.menu-mobile').toggleClass('menu-mobile-active');
+});
+$('.mnu-mob-shad, .mob-close').click(function () {
+    $('body').removeClass('body-fixed');
+    $('.mnu-mob-shad').removeClass('mnu-mob-shad-active');
+    $('.menu-mobile').removeClass('menu-mobile-active');
+});
+// Mobile menu
+
+
+
+
+
+
+
+
 // youtube script
 var tag = document.createElement('script');
 tag.src = "//www.youtube.com/iframe_api";
@@ -80,41 +124,3 @@ $(document).on('click', '.start-video', function () {
 });
 
 // youtube script END
-
-
-// Catalog
-$('.btn-catalog').click(function () {
-    $('.shadow').toggleClass('shadow-active');
-    $('.catalog').toggleClass('catalog-active');
-});
-$('.shadow, .close').click(function () {
-    $('.shadow').removeClass('shadow-active');
-    $('.catalog').removeClass('catalog-active');
-});
-// Catalog END
-
-
-// Request
-$('.request-a').click(function () {
-    $('.shadow-req').toggleClass('shadow-active');
-    $('.request').toggleClass('request-active');
-});
-$('.shadow-req, .close-req').click(function () {
-    $('.shadow-req').removeClass('shadow-active');
-    $('.request').removeClass('request-active');
-});
-// Request END
-
-
-// Mobile menu
-$('.mob-menu-btn').click(function () {
-    $('body').toggleClass('body-fixed');
-    $('.mnu-mob-shad').toggleClass('mnu-mob-shad-active');
-    $('.menu-mobile').toggleClass('menu-mobile-active');
-});
-$('.mnu-mob-shad, .mob-close').click(function () {
-    $('body').removeClass('body-fixed');
-    $('.mnu-mob-shad').removeClass('mnu-mob-shad-active');
-    $('.menu-mobile').removeClass('menu-mobile-active');
-});
-// Mobile menu

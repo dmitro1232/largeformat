@@ -54,6 +54,11 @@
             display: none;
         }
     }
+    .header-main{
+        .phone{
+            display: block;
+        }
+    }
 }
 
 
@@ -520,5 +525,30 @@
             }
         }
 
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+    .logo-sec{
+        margin-bottom: 20px;
+        .logo{
+            img{
+                max-width: 150px;
+            }
+        }
+    }
+    .lang{
+        margin-bottom: 20px;
+        &__list{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .phone{
+        text-align: left !important;
     }
 }

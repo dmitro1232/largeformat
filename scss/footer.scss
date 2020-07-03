@@ -1,0 +1,90 @@
+.footer {
+    background: #E8E8E8;
+    padding: 80px 0;
+
+    a {
+        color: #2E2E2E !important;
+    }
+
+    h5 {
+        font-family: $montAlt;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2E2E2E;
+    }
+
+    h6 {
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #2E2E2E;
+    }
+
+    &__menu {
+        ul {
+            li {
+                padding-bottom: 5px;
+
+                a {
+                    border-bottom: 1px solid #B4B4B4;
+                    font-family: $opensans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 180%;
+                    color: #2E2E2E;
+                }
+            }
+        }
+    }
+
+    &__inf,
+    &__contact,
+    &__copy {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    &__contact {
+        .social {
+            ul {
+                display: flex;
+
+                li {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__copy {
+        p {
+            font-family: $montAlt;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #2E2E2E;
+        }
+
+        ul {
+            li {
+                font-family: $opensans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 180%;
+                color: #B4B4B4;
+
+                span {
+                    border-bottom: 1px solid #CFCFCF;
+                }
+            }
+        }
+    }
+}
