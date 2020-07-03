@@ -1,0 +1,101 @@
+.article{
+    &__title{
+        margin-top: 40px;
+    }
+    &__date{
+        margin: 10px 0 10px 0;
+    }
+    &__text{
+        margin-top: 30px;
+    }
+}
+.thumbnail{
+    max-width: 100%;
+    border-radius: 4px;
+}
+@media screen and (max-width: 992px){
+    .thumbnail{
+        min-width: 100%;
+    }
+}
+.btn-sec-w{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    a{
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: right;
+        color: #2173EF;
+        &:hover{
+            color: #2173efd0;
+            border-bottom: none;
+        }
+    }
+    &__left{
+        background-image: url(../img/icons/ar_301.svg);
+        background-position: left center;
+        padding-left: 15px;
+        border-bottom: 1px solid #C3D9F9;
+    }
+    &__right{
+        background-image: url(../img/icons/ar_302.svg);
+        background-position: right center;
+        padding-right: 15px;
+        border-bottom: 1px solid #C3D9F9;
+    }
+}
+@media screen and (max-width: 415px){
+    .btn-sec-w{
+        flex-flow: column;
+        align-items: baseline;
+        position: relative;
+        margin-bottom: 130px;
+        &__left{
+            
+            background-image: url(../img/icons/ar_301.svg);
+            background-position: left center;
+            padding-left: 15px;
+        }
+        &__right{
+            float: right;
+            justify-content: flex-end;
+            background-image: url(../img/icons/ar_302.svg);
+            background-position: right center;
+            padding-right: 15px;
+            right: 0;
+            top: 35px;
+            position: absolute;
+        }
+    }
+}
+
+.interesting{
+    padding: 80px 0 120px 0;
+    .itm-wr{
+        margin-bottom: 40px;
+    }
+    &__item{
+        min-height: 100% !important;
+        border: 1px solid #E8E8E8;
+        border-radius: 0 0 4px 4px;
+    }
+    &__thmb{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__title{
+        padding-bottom: 80px;
+    }
+    &__body{
+        padding: 20px;
+        .date{
+            margin-top: 10px;
+        }
+    }
+}
