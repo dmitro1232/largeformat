@@ -1,61 +1,69 @@
-@media screen and (max-width: 1000px){
-    .container{
+@media screen and (max-width: 1000px) {
+    .container {
         min-width: 100% !important;
         max-width: 100% !important;
         margin: 0px 20px;
     }
-    .header-nav{
+
+    .header-nav {
         display: none !important;
     }
-    .searchline{
+
+    .searchline {
         display: none;
     }
-    .header-mobile{
+
+    .header-mobile {
         display: block !important;
-        .mob-menu-btn{
+
+        .mob-menu-btn {
             display: block;
         }
     }
-    .slick-dots{
+
+    .slick-dots {
         display: none !important;
     }
-    
+
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .header-slider {
         bottom: -30px;
-        
+
         .slick-arrow {
             display: none !important;
         }
-    
+
         .slick-slide {
             height: 1000px;
         }
-    
-        .slide {    
+
+        .slide {
             &__img {
                 justify-content: center;
             }
         }
     }
 }
-@media screen and (max-width: 410px){
+
+@media screen and (max-width: 410px) {
     .header-slider {
         .slick-slide {
             height: 1030px;
         }
     }
 }
-@media screen and (max-width: 575px){
-    .header-mobile{
-        .phone{
+
+@media screen and (max-width: 575px) {
+    .header-mobile {
+        .phone {
             display: none;
         }
     }
-    .header-main{
-        .phone{
+
+    .header-main {
+        .phone {
             display: block;
         }
     }
@@ -63,7 +71,7 @@
 
 
 @media screen and (max-width: 1200px) {
-  
+
 
     .reviews-wrap {
         padding-bottom: 40px;
@@ -500,7 +508,7 @@
             padding: 20px 20px;
         }
 
-        .close-req{
+        .close-req {
             right: 10px;
             top: 10px;
         }
@@ -519,7 +527,7 @@
         }
 
         &__submit {
-          
+
             button {
                 margin-right: 15px;
             }
@@ -532,23 +540,208 @@
 
 
 
-@media screen and (max-width: 767px){
-    .logo-sec{
+@media screen and (max-width: 767px) {
+    .logo-sec {
         margin-bottom: 20px;
-        .logo{
-            img{
+
+        .logo {
+            img {
                 max-width: 150px;
             }
         }
     }
-    .lang{
+
+    .lang {
         margin-bottom: 20px;
-        &__list{
+
+        &__list {
             display: flex;
             justify-content: flex-end;
         }
     }
-    .phone{
+
+    .phone {
         text-align: left !important;
+    }
+}
+
+
+
+
+
+
+/// BLOG
+
+
+@media screen and (max-width: 1200px) {
+    .blog {
+        &__sidebar {
+            padding-left: 20px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .blog {
+        &__item {
+            margin: 10px;
+        }
+
+        &__item-img {
+            img {
+                min-width: 100% !important;
+            }
+        }
+
+        &__sidebar {
+            display: flex;
+            justify-content: space-between;
+
+            .tag-section {
+                min-width: 50%;
+                padding-right: 10px;
+
+                .resp {
+                    display: block;
+                    margin-top: 0px;
+                    background: url(../img/sent.svg) 80% 210px, linear-gradient(98.18deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .popular {
+                .title-3 {
+                    padding-bottom: 30px;
+                    padding-left: 10px;
+                }
+
+                .flx-mb {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                &__article {
+                    display: flex;
+                    padding: 10px 0;
+                    flex-flow: column;
+                    min-width: 45%;
+                    max-width: 45%;
+                    margin: 5px !important;
+                }
+
+                &__thumb {
+                    min-width: 100% !important;
+                    max-width: 100% !important;
+                    height: 110px;
+                }
+
+                &__body {
+                    padding-left: 0;
+                    padding-top: 20px;
+                }
+
+                &__link {
+                    &:hover {
+                        h5 {
+                            color: #2173EF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hdm {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .blog {
+        &__sidebar {
+            .tag-section {
+                min-width: 40%;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .blog {
+        &__item {
+            margin: 10px;
+            width: 100%;
+        }
+
+        &__item-img {
+            img {
+                min-width: 100% !important;
+            }
+        }
+
+        &__sidebar {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+            .tag-section {
+                min-width: 50%;
+                padding-right: 10px;
+
+                .resp {
+                    display: block;
+                    margin-top: 0px;
+                    background: url(../img/sent.svg) 80% 210px, linear-gradient(98.18deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .popular {
+                .title-3 {
+                    padding-bottom: 30px;
+                    padding-left: 10px;
+                }
+
+                .flx-mb {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                &__article {
+                    display: flex;
+                    padding: 10px 0;
+                    flex-flow: column;
+                    min-width: 45%;
+                    max-width: 45%;
+                    margin: 5px !important;
+                }
+
+                &__thumb {
+                    min-width: 100% !important;
+                    max-width: 100% !important;
+                    height: 110px;
+                }
+
+                &__body {
+                    padding-left: 0;
+                    padding-top: 20px;
+                }
+
+                &__link {
+                    &:hover {
+                        h5 {
+                            color: #2173EF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hdm {
+            display: none;
+        }
     }
 }

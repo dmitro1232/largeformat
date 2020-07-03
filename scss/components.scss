@@ -7,6 +7,33 @@
     color: #2E2E2E;
     margin: 0;
 }
+// заголовок для блоков статьей
+.title-2{
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2E2E2E;
+}
+
+.title-3{
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2E2E2E;
+    margin: 0;
+}
+.title-4{
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E2E2E;
+}
 
 .link {
     background-image: url(../img/icons/link.svg);
@@ -579,24 +606,6 @@
 .flx{
     display: flex;
 }
-// заголовок для блоков статьей
-.title-2{
-    font-family: $montAlt;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 27px;
-    color: #2E2E2E;
-}
-
-.title-3{
-    font-family: $montAlt;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: #2E2E2E;
-}
 
 .txt-1{
     font-family: $opensans;
@@ -679,5 +688,30 @@
         display: flex;
         align-items: flex-end;
         padding-bottom: 13px;
+    }
+}
+
+
+// Кнопочки
+
+.btn-1{
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 15px;
+    background: #2173EF;
+    box-shadow: 0px 6px 10px rgba(33, 115, 239, 0.2);
+    border-radius: 50px;
+    transition: .3s;
+    &:hover{
+        background: #0048B6;
+        box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3);
+        border-radius: 50px;
     }
 }
