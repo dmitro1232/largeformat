@@ -5,6 +5,7 @@
     font-size: 30px;
     line-height: 37px;
     color: #2E2E2E;
+    margin: 0;
 }
 
 .link {
@@ -568,4 +569,115 @@
 
 .menu-mobile-active {
     display: block !important;
+}
+
+
+
+
+// начиная от страницы БЛОГ 
+
+.flx{
+    display: flex;
+}
+// заголовок для блоков статьей
+.title-2{
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2E2E2E;
+}
+
+.title-3{
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2E2E2E;
+}
+
+.txt-1{
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #2E2E2E;
+}
+
+.tag{
+    display: inline-block;
+    margin: 5px 5px 5px 0 !important;
+    a{
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #2E2E2E;
+        border: 1px solid #C3D9F9;
+        border-radius: 117px;
+        padding: 3px 10px 3px 33px;
+        background-image: url(../img/icons/tag-1.svg);
+        background-repeat: no-repeat !important;
+        background-position: 10px center !important;
+        &:hover{
+            color: #2E2E2E;
+        }
+    }
+    &-active{
+        a{
+            border: 1px solid #2173EF;
+            background: #2173EF;
+            color: #fff;
+            background-image: url(../img/icons/tag-2.svg);
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.pagination{
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0 auto;
+    &__item{
+        border: 1px solid #2173EF;
+        border-radius: 100px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        font-size: 14px;
+        line-height: 19px;
+        color: #2173EF;
+        &:hover{
+            border: 1px solid #2E2E2E;
+            color: #2E2E2E;
+        }
+    }
+    &-active{
+        background: #2173EF;
+        color: #fff;
+        &:hover{
+            border: 1px solid #2173EF;
+            background: #2173EF;
+            color: #fff;
+        }
+    }
+    &__dots{
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        color: #2E2E2E;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 13px;
+    }
 }

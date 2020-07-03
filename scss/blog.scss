@@ -1,0 +1,107 @@
+.blog{
+
+    &__title{
+        padding: 80px 0;
+    }
+
+    &-sidebar{
+        &__title{
+            font-size: 16px;
+            padding: 91px 0 40px 0;
+        }
+    }
+
+    &-cont{
+        flex-wrap: wrap;
+        display: flex;
+        .pagination{
+            padding: 100px 0 160px 0;
+        }
+    }
+    &__item{
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 60px;
+        &-img{
+            border-radius: 4px;
+            img{
+                max-width: 100%;
+            }
+        }
+        .title-2{
+            margin-top: 20px;
+        }
+        .date{
+            margin: 10px 0 20px 0;
+        }
+    }
+
+
+    &__sidebar{
+        padding-left: 80px !important;
+
+        .tag-section{
+            padding-bottom: 80px;
+        }
+        .popular{
+            .title-3{
+                padding-bottom: 30px;
+            }
+            &__article{
+                display: flex;
+                padding: 10px 0;
+                &:hover{
+                    .popular__thumb{
+                        &:after{
+                            background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+                        }
+                    }
+                }
+            }
+            &__thumb{
+                min-width: 140px !important;
+                max-width: 140px !important;
+                height: 140px;
+                overflow: hidden;
+                border-radius: 4px;
+                position: relative;
+                z-index: 20;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+                  }
+                img{
+                    // min-width: 100%;
+                }
+            }
+
+            &__body{
+                padding-left: 10px;
+            }
+            &__link{
+                h5{
+                    font-family: $opensans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #2E2E2E;
+                }
+                &:hover{
+                    h5{
+                        color: #2173EF;
+                    }
+                }
+            }
+        }
+        .popular__link:hover{
+
+        }
+    }
+}
