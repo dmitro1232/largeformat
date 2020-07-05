@@ -73,10 +73,34 @@
     font-size: 18px;
     line-height: 160%;
 }
+.txt-4 {
+    font-size: 12px;
+    line-height: 16px;
+}
 
 .str {
     font-weight: 600 !important;
 }
+
+
+
+
+.flx {
+    display: flex;
+}
+
+.flx-cen {
+    display: flex;
+    align-items: center;
+}
+
+.flx-btw {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 
 .link {
@@ -653,23 +677,6 @@
 
 
 
-
-// начиная от страницы БЛОГ 
-
-.flx {
-    display: flex;
-}
-
-.flx-cen {
-    display: flex;
-    align-items: center;
-}
-
-.flx-btw {
-    display: flex;
-    justify-content: space-between;
-}
-
 .tag {
     display: inline-block;
     margin: 5px 5px 5px 0 !important;
@@ -835,6 +842,41 @@
             &:hover {
                 color: #2E2E2E;
             }
+        }
+    }
+}
+
+
+
+// FROMS Формы 
+
+.input-1{
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #B4B4B4;
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+        &::placeholder{
+            font-family: $opensans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }

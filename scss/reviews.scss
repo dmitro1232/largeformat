@@ -1,0 +1,50 @@
+.reviews-wrap{
+    .rvw-i{
+        margin-bottom: 50px !important;
+    }    
+}
+
+.call-request{
+    margin-top: 32px;
+    background: linear-gradient(98.75deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 40px 20px !important;
+    &__ph{
+        margin-top: 25px;
+    }
+    &__inpt{
+        background-image: url(../img/icons/phone.svg);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 50px;
+    }
+}
+
+.pagination-wrp{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    .pagination-wrp{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+}
+@media (min-width: 576px) and (max-width: 992px){
+    .call-request{
+        &__form{
+            display: flex;
+            align-items: center;
+            .sefar{
+                width: 50%;
+                padding: 20px;
+            }
+        }
+        &__inpt{
+            min-width: 100% !important;
+        }
+    }
+}
