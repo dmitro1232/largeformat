@@ -1,3 +1,14 @@
+.title-strong {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #2E2E2E;
+    margin: 0;
+}
+
 .title {
     font-family: $montAlt;
     font-style: normal;
@@ -7,8 +18,9 @@
     color: #2E2E2E;
     margin: 0;
 }
+
 // заголовок для блоков статьей
-.title-2{
+.title-2 {
     font-family: $montAlt;
     font-style: normal;
     font-weight: 800;
@@ -17,7 +29,7 @@
     color: #2E2E2E;
 }
 
-.title-3{
+.title-3 {
     font-family: $montAlt;
     font-style: normal;
     font-weight: bold;
@@ -26,7 +38,8 @@
     color: #2E2E2E;
     margin: 0;
 }
-.title-4{
+
+.title-4 {
     font-family: $opensans;
     font-style: normal;
     font-weight: bold;
@@ -34,6 +47,37 @@
     line-height: 16px;
     color: #2E2E2E;
 }
+
+
+.txt-1,
+.txt-2,
+.txt-3,
+    {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #2E2E2E;
+}
+
+.txt-1 {
+    font-size: 14px;
+}
+
+.txt-2 {
+    font-size: 16px;
+}
+
+.txt-3 {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.str {
+    font-weight: 600 !important;
+}
+
 
 .link {
     background-image: url(../img/icons/link.svg);
@@ -81,8 +125,8 @@
     display: inline-block;
 }
 
-.logo{
-    img{
+.logo {
+    img {
         max-width: 100%;
     }
 }
@@ -90,12 +134,15 @@
 .lang {
     &__list {
         display: flex;
-        margin: 0;
+        margin: 0 !important;
+        margin-bottom: 0 !important;
+        height: 100%;
     }
 
     &__item {
         margin-right: 10px;
-        &:last-child{
+
+        &:last-child {
             margin-right: 0;
         }
     }
@@ -113,18 +160,21 @@
         font-weight: 800;
     }
 }
-@media screen and (max-width: 377px){
-    .sec-pro{
-        a{
+
+@media screen and (max-width: 377px) {
+    .sec-pro {
+        a {
             margin-left: 15px !important;
             padding-left: 28px !important;
         }
-        .mob-menu-btn{
+
+        .mob-menu-btn {
             margin-left: 15px !important;
         }
     }
-    .phone{
-        a{
+
+    .phone {
+        a {
             font-size: 12px !important;
         }
     }
@@ -515,11 +565,13 @@
                 font-size: 16px;
                 line-height: 22px;
                 color: #2E2E2E;
-                &:hover{
+
+                &:hover {
                     color: #2E2E2E;
                 }
             }
-            .tlph{
+
+            .tlph {
                 display: none;
             }
         }
@@ -586,7 +638,8 @@
                 font-size: 16px;
                 line-height: 22px;
                 color: #2E2E2E;
-                &:hover{
+
+                &:hover {
                     color: #2E2E2E;
                 }
             }
@@ -603,31 +656,25 @@
 
 // начиная от страницы БЛОГ 
 
-.flx{
+.flx {
     display: flex;
 }
 
-.txt-1{
-    font-family: $opensans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 180%;
-    color: #2E2E2E;
-}
-.txt-2{
-    font-family: $opensans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 180%;
-    color: #2E2E2E;
+.flx-cen {
+    display: flex;
+    align-items: center;
 }
 
-.tag{
+.flx-btw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag {
     display: inline-block;
     margin: 5px 5px 5px 0 !important;
-    a{
+
+    a {
         font-family: $opensans;
         font-style: normal;
         font-weight: normal;
@@ -640,29 +687,33 @@
         background-image: url(../img/icons/tag-1.svg);
         background-repeat: no-repeat !important;
         background-position: 10px center !important;
-        &:hover{
+
+        &:hover {
             color: #2E2E2E;
         }
     }
-    &-active{
-        a{
+
+    &-active {
+        a {
             border: 1px solid #2173EF;
             background: #2173EF;
             color: #fff;
             background-image: url(../img/icons/tag-2.svg);
-            &:hover{
+
+            &:hover {
                 color: #fff;
             }
         }
     }
 }
 
-.pagination{
+.pagination {
     font-family: $opensans;
     font-style: normal;
     font-weight: 600;
     margin: 0 auto;
-    &__item{
+
+    &__item {
         border: 1px solid #2173EF;
         border-radius: 100px;
         width: 34px;
@@ -674,21 +725,25 @@
         font-size: 14px;
         line-height: 19px;
         color: #2173EF;
-        &:hover{
+
+        &:hover {
             border: 1px solid #2E2E2E;
             color: #2E2E2E;
         }
     }
-    &-active{
+
+    &-active {
         background: #2173EF;
         color: #fff;
-        &:hover{
+
+        &:hover {
             border: 1px solid #2173EF;
             background: #2173EF;
             color: #fff;
         }
     }
-    &__dots{
+
+    &__dots {
         font-size: 20px;
         line-height: 27px;
         letter-spacing: 0.1em;
@@ -702,7 +757,7 @@
 
 // Кнопочки
 
-.btn-1{
+.btn-1 {
     font-family: $opensans;
     font-style: normal;
     font-weight: bold;
@@ -717,29 +772,57 @@
     box-shadow: 0px 6px 10px rgba(33, 115, 239, 0.2);
     border-radius: 50px;
     transition: .3s;
-    &:hover{
+
+    &:hover {
         background: #0048B6;
         box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3);
         border-radius: 50px;
     }
 }
 
+.btn-grad {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(126.77deg, #2173EF 15.6%, #C03CD6 85.6%);
+    box-shadow: 0px 6px 10px rgba(192, 60, 214, 0.2);
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    transition: all .4s;
+
+    &:hover {
+        transition: all .4s;
+        background: linear-gradient(110.01deg, #0048B6 15.6%, #86009C 85.6%);
+        box-shadow: 0px 3px 5px rgba(134, 0, 156, 0.3);
+        border-radius: 50px;
+    }
+}
 
 
-.breadcrumbs{
+
+.breadcrumbs {
     padding: 80px 0;
-    &__list{
+
+    &__list {
         display: flex;
         margin: 0;
         padding: 0;
     }
-    &__item{
-        &:first-child{
-            a{
+
+    &__item {
+        &:first-child {
+            a {
                 padding-left: 0;
             }
         }
-        a{
+
+        a {
             padding: 0 10px;
             border-right: 1px solid #B4B4B4;
             font-family: $mont;
@@ -748,7 +831,8 @@
             font-size: 14px;
             line-height: 13px;
             color: #2E2E2E;
-            &:hover{
+
+            &:hover {
                 color: #2E2E2E;
             }
         }

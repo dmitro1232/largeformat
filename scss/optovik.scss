@@ -1,0 +1,129 @@
+
+.first-opt{
+    padding: 80px 0 100px 0;
+    &__title{
+        margin-bottom: 40px;
+    }
+    img{
+        max-width: 100%;
+    }
+    .btn-grad{
+        margin-top: 40px;
+    }
+}
+
+
+.opt-advantage{
+    background: #F9F9F9;
+    padding: 80px 0;
+    &__sec{
+        margin-bottom: 80px;
+        &:nth-child(1){
+            .opt-advantage__img{
+                background-image: url(../img/optoviki/img_1.png);
+            }
+        }
+        &:nth-child(2){
+            .opt-advantage__img{
+                background-image: url(../img/optoviki/img_2.png);
+            }
+        }
+        &:nth-child(3){
+            .opt-advantage__img{
+                background-image: url(../img/optoviki/img_3.png);
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__img{
+        min-height: 100%;
+        background-image: url(../img/optoviki/img_1.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    p{
+        margin: 0;
+        padding: 10px 0;
+    }
+}
+
+
+
+.loyalty{
+    padding: 160px 0 80px 0;
+    &__contitem{
+        margin-top: 80px;
+    }
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__item{
+        margin-bottom: 40px;
+    }
+    .itm-loy{
+        border: 1px solid #C3D9F9;
+        border-radius: 4px;
+        min-height: 100%;
+        padding: 40px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        position: relative;
+        &__img{
+            position: absolute;
+            top: 0;
+            right: 15px;
+        }
+    }
+    &__subtitle{
+        background: linear-gradient(123.69deg, #2173EF 15.6%, #C03CD6 85.6%);
+        display: table;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 13px;
+    }
+    p{
+        margin: 0;
+    }
+    &__num{
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        color: #2E2E2E;
+        margin-bottom: 40px;
+        display: block;
+    }
+    &__pay{
+        color: #B4B4B4;
+        font-size: 12px;  
+        padding-top: 15px;    
+    }
+}
+
+
+
+
+
+.opt-registration{
+    padding: 40px 0 160px 0;
+    &__img{
+        text-align: right;
+        img{
+            width: 100%;
+        }
+    }
+    &__inf{
+        margin-left: 20px;
+    }
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__reg{
+        margin-top: 60px;
+    }
+}

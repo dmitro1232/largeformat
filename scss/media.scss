@@ -550,9 +550,13 @@
             }
         }
     }
+    .header-main{
+        .lang{
+            margin-bottom: 20px;
+        }
+    }
 
     .lang {
-        margin-bottom: 20px;
 
         &__list {
             display: flex;
@@ -563,6 +567,50 @@
     .phone {
         text-align: left !important;
     }
+
+    .opt-advantage{
+        padding-bottom: 40px;
+        &__img{
+            min-width: 100% ;
+            height: 300px;
+            background-image: url(../img/optoviki/img_1.png);
+            background-position: center center;
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+        &__info{
+            margin-top: 40px;
+        }
+    }
+    .loyalty{
+        padding-top: 80px;
+    }
+
+    .opt-registration{
+        .med-fl{
+            display: flex;
+            flex-flow: column-reverse;
+        }
+        &__img{
+            text-align: left;
+            margin-top: 45px;
+            img{
+                width: auto;
+                height: 250px;
+                transform: scale(-1, 1);
+            }   
+        }
+        &__inf{
+            margin-left: 20px;
+        }
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__reg{
+            margin-top: 60px;
+        }
+    }
+
 }
 
 

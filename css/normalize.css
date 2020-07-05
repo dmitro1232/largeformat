@@ -223,7 +223,11 @@ button,
 [type="submit"] {
   -webkit-appearance: button;
 }
-
+button, 
+button:active, 
+button:focus {
+    outline: none !important;
+}
 /**
  * Remove the inner border and padding in Firefox.
  */
