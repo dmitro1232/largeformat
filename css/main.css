@@ -46,6 +46,14 @@
   line-height: 16px;
   color: #2E2E2E; }
 
+.title-5 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2E2E2E; }
+
 .txt-1,
 .txt-2,
 .txt-3 {
@@ -71,7 +79,7 @@
   line-height: 16px; }
 
 .str {
-  font-weight: 600 !important; }
+  font-weight: bold; }
 
 .flx {
   display: -webkit-box;
@@ -93,6 +101,14 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.price {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2E2E2E; }
 
 .link {
   background-image: url(../img/icons/link.svg);
@@ -635,6 +651,54 @@
     box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3);
     border-radius: 50px; }
 
+.btn-2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #2173EF;
+  -webkit-box-shadow: 0px 6px 10px rgba(33, 115, 239, 0.3);
+  box-shadow: 0px 6px 10px rgba(33, 115, 239, 0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  padding: 8px 15px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+  .btn-2:hover {
+    background: #0048B6;
+    -webkit-box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3);
+    box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3); }
+
+.btn-3 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2173EF;
+  background: #FFFFFF;
+  border: 2px solid #2173EF;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 12px 22px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .btn-3:hover {
+    border: 3px solid #2173EF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
 .btn-grad {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -688,13 +752,15 @@
     .breadcrumbs__item a:hover {
       color: #2E2E2E; }
 
-.input-1 {
+.input-1,
+.input-phone {
   background: #FFFFFF;
   border: 1px solid #E8E8E8;
   border-radius: 4px;
   padding: 15px 20px;
   margin-bottom: 30px; }
-  .input-1 input {
+  .input-1 input,
+  .input-phone input {
     width: 100%;
     height: 100%;
     border: none;
@@ -704,38 +770,52 @@
     font-size: 16px;
     line-height: 22px;
     color: #B4B4B4; }
-    .input-1 input:focus::-webkit-input-placeholder {
+    .input-1 input:focus::-webkit-input-placeholder,
+    .input-phone input:focus::-webkit-input-placeholder {
       color: transparent; }
-    .input-1 input:focus:-ms-input-placeholder {
+    .input-1 input:focus:-ms-input-placeholder,
+    .input-phone input:focus:-ms-input-placeholder {
       color: transparent; }
-    .input-1 input:focus::-ms-input-placeholder {
+    .input-1 input:focus::-ms-input-placeholder,
+    .input-phone input:focus::-ms-input-placeholder {
       color: transparent; }
-    .input-1 input:focus::placeholder {
+    .input-1 input:focus::placeholder,
+    .input-phone input:focus::placeholder {
       color: transparent; }
-    .input-1 input::-webkit-input-placeholder {
+    .input-1 input::-webkit-input-placeholder,
+    .input-phone input::-webkit-input-placeholder {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 22px; }
-    .input-1 input:-ms-input-placeholder {
+    .input-1 input:-ms-input-placeholder,
+    .input-phone input:-ms-input-placeholder {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 22px; }
-    .input-1 input::-ms-input-placeholder {
+    .input-1 input::-ms-input-placeholder,
+    .input-phone input::-ms-input-placeholder {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 22px; }
-    .input-1 input::placeholder {
+    .input-1 input::placeholder,
+    .input-phone input::placeholder {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 22px; }
+
+.input-phone input {
+  background-image: url(../img/icons/phone.svg);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  padding-left: 50px; }
 
 .header-home {
   background: -webkit-linear-gradient(337.55deg, #2173EF 15.6%, #C03CD6 85.6%);
@@ -1831,6 +1911,123 @@ button {
       padding: 20px; }
   .call-request__inpt {
     min-width: 100% !important; } }
+
+.cataloglist {
+  padding: 240px 0 120px 0; }
+  .cataloglist .cti {
+    margin-bottom: 40px; }
+  .cataloglist .ques-i {
+    border: none; }
+  .cataloglist__item {
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    height: 100%; }
+  .cataloglist__title {
+    margin-bottom: 60px; }
+  .cataloglist__img img {
+    min-width: 100%;
+    max-width: 100%; }
+  .cataloglist__body {
+    padding: 20px; }
+  .cataloglist__subtitle {
+    margin-top: 20px; }
+  .cataloglist .price {
+    margin-top: 5px; }
+  .cataloglist__btn {
+    margin-top: 40px; }
+  .cataloglist__ques {
+    background: -webkit-linear-gradient(353.15deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+    background: -o-linear-gradient(353.15deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+    background: linear-gradient(96.85deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px; }
+    .cataloglist__ques .input-phone {
+      margin-top: 10px; }
+      .cataloglist__ques .input-phone input {
+        background-position: 0px center;
+        padding-left: 30px; }
+    .cataloglist__ques p {
+      margin: 0; }
+  .cataloglist__quetxt {
+    margin-top: 40px !important; }
+  .cataloglist__quetitle {
+    margin-top: 50px; }
+  .cataloglist__quesbtn {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 12px 22px !important; }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cataloglist__ques {
+    padding: 15px; }
+    .cataloglist__ques .input-phone {
+      margin-top: 10px;
+      padding: 10px; }
+      .cataloglist__ques .input-phone input {
+        background-position: 0px center;
+        padding-left: 30px; }
+    .cataloglist__ques p {
+      margin: 0; }
+  .cataloglist__quesform {
+    margin-top: 20px; }
+  .cataloglist__quetxt {
+    margin-top: 20px !important; }
+  .cataloglist__quetitle {
+    margin-top: 15px; }
+  .cataloglist__quesbtn {
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 12px 22px !important; } }
+
+.about-print {
+  padding: 40px 0 160px 0; }
+  .about-print__title {
+    margin-bottom: 60px; }
+  .about-print__read img {
+    margin-left: 7px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .about-print__droptxt {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+    height: auto;
+    max-height: 350px;
+    -webkit-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+    .about-print__droptxt:after {
+      display: block;
+      content: '';
+      width: 100%;
+      bottom: 0;
+      height: 200px;
+      position: absolute;
+      background: -webkit-linear-gradient(268.61deg, rgba(255, 255, 255, 0) 4.33%, #FFFFFF 95.67%);
+      background: -o-linear-gradient(268.61deg, rgba(255, 255, 255, 0) 4.33%, #FFFFFF 95.67%);
+      background: linear-gradient(181.39deg, rgba(255, 255, 255, 0) 4.33%, #FFFFFF 95.67%); }
+  .about-print .about-print__droptxt-active {
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    max-height: 1500px; }
+    .about-print .about-print__droptxt-active:after {
+      display: none; }
+  .about-print .about-print__read-active img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-left: 7px; }
 
 .footer {
   background: #E8E8E8;

@@ -48,6 +48,14 @@
     color: #2E2E2E;
 }
 
+.title-5 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E2E2E;
+}
 
 .txt-1,
 .txt-2,
@@ -79,7 +87,7 @@
 }
 
 .str {
-    font-weight: 600 !important;
+    font-weight: bold;
 }
 
 
@@ -100,6 +108,14 @@
 }
 
 
+.price{
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2E2E2E;
+}
 
 
 
@@ -762,7 +778,7 @@
 }
 
 
-// Кнопочки
+// Кнопочки btn button
 
 .btn-1 {
     font-family: $opensans;
@@ -787,6 +803,51 @@
     }
 }
 
+
+.btn-2{
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #2173EF;
+    box-shadow: 0px 6px 10px rgba(33, 115, 239, 0.3);
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    padding: 8px 15px;
+    transition: 0.4s;
+    &:hover{
+        background: #0048B6;
+        box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3);
+    }
+}
+
+.btn-3{
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2173EF;
+    background: #FFFFFF;
+    border: 2px solid #2173EF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 12px 22px;
+    transition: all 0.4s;
+    &:hover{
+        border: 3px solid #2173EF;
+        box-sizing: border-box;
+    }
+}
+
+
 .btn-grad {
     font-family: $opensans;
     font-style: normal;
@@ -810,6 +871,9 @@
         border-radius: 50px;
     }
 }
+
+
+
 
 
 
@@ -850,7 +914,8 @@
 
 // FROMS Формы 
 
-.input-1{
+.input-1,
+.input-phone{
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
     border-radius: 4px;
@@ -878,5 +943,14 @@
             font-size: 16px;
             line-height: 22px;
         }
+    }
+}
+
+.input-phone{
+    input{
+        background-image: url(../img/icons/phone.svg);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        padding-left: 50px;
     }
 }

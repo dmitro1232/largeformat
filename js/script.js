@@ -76,6 +76,14 @@ $('.mnu-mob-shad, .mob-close').click(function () {
 
 
 
+$('.about-print__read').click(function () {
+    $(this).toggleClass('about-print__read-active');
+});
+
+$('.about-print__read').click(function () {
+    $('.about-print__droptxt').toggleClass('about-print__droptxt-active');
+});
+
 
 
 
