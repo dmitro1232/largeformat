@@ -1,25 +1,29 @@
 .reviews-wrap{
+    margin-bottom: 100px;
     .rvw-i{
-        margin-bottom: 50px !important;
+        margin-bottom: 80px !important;
     }    
 }
-
-.call-request{
-    margin-top: 32px;
-    background: linear-gradient(98.75deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    padding: 40px 20px !important;
+.call-request {
+    position: relative;
     &__ph{
         margin-top: 25px;
     }
     &__inpt{
-        background-image: url(../img/icons/phone.svg);
-        background-repeat: no-repeat;
-        background-position: 20px center;
-        padding-left: 50px;
+        input{
+            padding-left: 30px !important;
+        }
+    }
+    &__form{
+        position: absolute;
+        margin-top: 32px;
+        background: linear-gradient(98.75deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+        padding: 40px 20px !important;
     }
 }
+
 
 .pagination-wrp{
     display: none;
@@ -31,6 +35,11 @@
         justify-content: center;
         margin-top: 60px;
         margin-bottom: 100px;
+    }
+    .call-request{
+        &__form{
+            position: relative;
+        }
     }
 }
 @media (min-width: 576px) and (max-width: 992px){

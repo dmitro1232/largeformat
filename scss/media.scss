@@ -455,6 +455,84 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .menu-mobile {
+        &__wrp {
+  
+    
+            .title-m {
+                display: block;
+                background: #2173EF;
+                color: #FFFFFF;
+                padding: 24px 0 24px 40px;
+            }
+
+            .cont-m {
+                margin-top: 0px;
+                padding-left: 0;
+                padding-right: 7px;
+            }
+    
+            .main-menu-m {
+                &__item {
+                    border-top: 1px solid #E8E8E8;
+                    padding: 20px 40px;
+                    a{
+                        margin: 0;
+                    }
+                }
+    
+                .tlph {
+                    display: block;
+                    color: #B4B4B4;
+                }
+            }
+    
+            .mob-category {
+    
+                &__list {
+    
+                    .drop {
+                        &::before {
+                            left: 17px;
+                        }   
+                    }
+    
+                    .drop-active {
+                        a {
+
+                        }
+    
+                        &::before {
+   
+                        }
+                    }
+    
+                    .drop-menu {
+                        li {
+                            padding: 20px 40px;
+                            a {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+    
+                &__item {
+                    border-top: 1px solid #E8E8E8;
+                    padding: 20px 40px;
+                    a{
+                        margin: 0;
+                    }
+                }
+    
+                &__link {
+
+                }
+            }
+        }
+    }
+
     .callback {
 
         &__inpt {
