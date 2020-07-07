@@ -479,7 +479,12 @@
                     padding: 20px 40px;
                     a{
                         margin: 0;
+                        padding: 0;
                     }
+                }
+                &__link{
+                    padding: 0 !important;
+
                 }
     
                 .tlph {
@@ -513,6 +518,7 @@
                             padding: 20px 40px;
                             a {
                                 margin: 0;
+                                padding: 0 !important;
                             }
                         }
                     }
@@ -527,7 +533,7 @@
                 }
     
                 &__link {
-
+                    padding: 0 !important;
                 }
             }
         }

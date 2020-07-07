@@ -2538,7 +2538,10 @@ button {
     border-top: 1px solid #E8E8E8;
     padding: 20px 40px; }
     .menu-mobile__wrp .main-menu-m__item a {
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
+  .menu-mobile__wrp .main-menu-m__link {
+    padding: 0 !important; }
   .menu-mobile__wrp .main-menu-m .tlph {
     display: block;
     color: #B4B4B4; }
@@ -2547,12 +2550,15 @@ button {
   .menu-mobile__wrp .mob-category__list .drop-menu li {
     padding: 20px 40px; }
     .menu-mobile__wrp .mob-category__list .drop-menu li a {
-      margin: 0; }
+      margin: 0;
+      padding: 0 !important; }
   .menu-mobile__wrp .mob-category__item {
     border-top: 1px solid #E8E8E8;
     padding: 20px 40px; }
     .menu-mobile__wrp .mob-category__item a {
       margin: 0; }
+  .menu-mobile__wrp .mob-category__link {
+    padding: 0 !important; }
   .callback__inpt {
     width: 50%;
     position: absolute;
