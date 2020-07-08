@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    outline: none !important;
   }
   
   ul {

@@ -14,7 +14,27 @@ $(document).ready(function () {
             }
         }]
     });
+
+    $('.slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-itm',
+        prevArrow: $('.prev-prod'),
+        nextArrow: $('.next-prod')
+    });
+    $('.slider-itm').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+    });
 });
+
+
 
 ////
 /////    МАСКА ТЕЛЕФОНА
@@ -31,7 +51,9 @@ document.onselectstart = noselect;
 // запрет на выделение элементов страницы
 document.oncontextmenu = noselect;
 // запрет на выведение контекстного меню
-function noselect() {return false;}
+function noselect() {
+    return false;
+}
 
 
 
@@ -76,13 +98,50 @@ $('.mnu-mob-shad, .mob-close').click(function () {
 
 
 
-$('.about-print__read').click(function () {
-    $(this).toggleClass('about-print__read-active');
+$('.dropdown-text__read').click(function () {
+    $(this).toggleClass('dropdown-text__read-active');
 });
 
-$('.about-print__read').click(function () {
-    $('.about-print__droptxt').toggleClass('about-print__droptxt-active');
+$('.dropdown-text__read').click(function () {
+    $('.dropdown-text__droptxt').toggleClass('dropdown-text__droptxt-active');
 });
+
+// PARAMETERS
+
+$('.parameters__title').click(function () {
+    $(this).toggleClass('parameters__title-active');
+    // $('.wrp-dh').toggleClass('wrp-dh-show');
+});
+
+
+
+
+
+// var acc = document.getElementsByClassName("parameters__title");
+// var i;
+// var cont = document.getElementsByClassName("parameters__content");
+
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function () {
+//         this.classList.toggle("parameters__content-active");
+//         var parameters__content = this.nextElementSibling;
+//         if (parameters__content.style.maxHeight) {
+//             // parameters__content.style.maxHeight = null;
+//         } else {
+//             parameters__content.style.maxHeight = parameters__content.scrollHeight + "px";
+//         }
+//     });
+// }
+//END PARAMETERS
+
+
+
+
+
+
+
+
+
 
 
 

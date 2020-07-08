@@ -105,7 +105,7 @@
 
 
 
-.about-print{
+.dropdown-text{
     padding: 40px 0 160px 0;
     &__title{
         margin-bottom: 60px;
@@ -134,17 +134,17 @@
             background: linear-gradient(181.39deg, rgba(255, 255, 255, 0) 4.33%, #FFFFFF 95.67%);
         }
     }
-    .about-print__droptxt-active{
+    .dropdown-text__droptxt-active{
         transition: 0.5s ease;
         max-height: 1500px;
         &:after{
             display: none;
         }
     }
-    .about-print__read{
+    .dropdown-text__read{
         margin-top: 50px;
     }
-    .about-print__read-active{
+    .dropdown-text__read-active{
         img{
             transform: rotate(180deg);
             margin-left: 7px;

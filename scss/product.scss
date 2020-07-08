@@ -1,0 +1,349 @@
+.prod-wrapp {
+    .cataloglist {
+        padding-top: 60px;
+    }
+}
+
+
+
+.prod-title {
+    margin-bottom: 80px;
+}
+
+.ad-fl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-images {
+    margin-bottom: 40px;
+    position: relative;
+
+    .slider-big {
+        border-radius: 4px;
+        border: 1px solid #E8E8E8;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .s-bs {
+        background: #fff;
+        display: block;
+        padding: 0px 2px 10px 2px;
+        position: absolute;
+        bottom: 74px;
+        right: -2px;
+        display: flex;
+    }
+
+    .prev-prod,
+    .next-prod {
+        background: #fff;
+        z-index: 3;
+        width: 15px;
+        height: 30px;
+        border: none;
+        margin: 0 13px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(../img/icons/ar-bt-s.svg);
+    }
+
+    .prev-prod {
+        right: 60px;
+
+        &:hover {
+            transform: rotate(180deg);
+            background-image: url(../img/icons/ar-bt-s-b.svg);
+        }
+    }
+
+    .next-prod {
+        transform: rotate(180deg);
+
+        &:hover {
+            transform: rotate(0);
+            background-image: url(../img/icons/ar-bt-s-b.svg);
+        }
+    }
+
+    .slider-itm {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        img {
+            max-width: 83px;
+            max-height: 60px;
+            border-radius: 4px;
+            border: 1px solid #E8E8E8;
+        }
+
+        .slick-slide,
+        .slick-cloned {
+            margin-right: .5px !important;
+        }
+    }
+}
+
+
+
+
+
+.product-descr {
+    .dropdown-text {
+        padding-bottom: 40px;
+    }
+
+    .dropdown-text__title {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+
+
+
+.self-cal {
+    margin: 0;
+    line-height: 160%;
+}
+
+
+.add-template {
+    margin-top: 50px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}
+
+.url-template {
+    p {
+        margin: 0;
+    }
+
+    &__inp {
+        width: 50%;
+
+        input {
+            font-size: 14px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__frmb {
+        margin-top: 10px;
+    }
+
+    &__quest {
+        display: block;
+        background-image: url(../img/icons/quest.svg);
+        background-position: left center;
+        padding-left: 30px;
+        height: 30px;
+        margin-left: 40px !important;
+
+        a {
+            color: #B4B4B4;
+            border-bottom: 1px dashed #B4B4B4;
+            line-height: 17px;
+
+            &:hover {
+                border: none;
+                color: #B4B4B4;
+            }
+        }
+    }
+
+
+    &__other {
+        margin-top: 20px;
+    }
+}
+
+
+.choose {
+    margin-top: 20px;
+    display: flex;
+}
+
+.chosen {
+    margin-left: 40px;
+
+    &__t {
+        margin-right: 20px !important;
+    }
+
+    &__tag {
+        display: flex;
+        align-items: center;
+
+        &-close {
+            width: 17px;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.parameters {
+    margin-top: 80px;
+
+    &__wrapp {
+        margin-top: 40px;
+        background: #F9F9F9;
+        border-radius: 4px;
+        padding: 0 20px;
+    }
+
+    &__item {
+        padding: 20px 0;
+        border-bottom: 1px solid #E8E8E8;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__title {
+        cursor: pointer;
+        transition: 0.5s;
+
+        h3 {
+            position: relative;
+            display: inline-block;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                background-image: url(../img/icons/ar-59.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 15px;
+                right: -20px;
+                top: 4px;
+                transition: .4s;
+            }
+        }
+
+        &-active {
+            h3 {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .parameters__content {
+                display: block;
+            }
+        }
+    }
+
+    &__content {
+        color: #212121;
+        // max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .parameters__content-active {
+        padding-bottom: 40px;
+    }
+
+
+    
+    .wrp-dh{
+        height: 100px;
+        display: flex !important;
+        // &-show{
+        //     display: flex !important;
+        // }
+    }
+
+    .slct{
+        width: 220px !important;
+        outline: none !important;
+        padding-right: 20px !important;
+    }
+    .gk-img{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 100px;
+        margin-right: 50px;
+    
+    }
+    .form-control__wrp{
+        padding: 0 20px;
+        background: #fff;
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+    }
+    .form-control{
+        padding: 0;
+        border: transparent;
+        outline: 0 !important;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+    }
+    .form-control:focus{
+        border: transparent;
+        outline: 0 !important;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+    }
+
+
+
+    .size{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .form-control__wrp{
+            min-width: 100% !important;
+            .slct{
+                min-width: 100% !important;
+            }
+        }
+    }
+    .or{
+        margin: 20px 0;
+    }
+    .size-form{
+        display: flex;
+        input{
+            margin-right: 20px;
+        }
+    }
+
+    .substrate{
+        .form-control__wrp{
+            margin: 10px 0;
+            min-width: 100% !important;
+            .slct{
+                min-width: 100% !important;
+            }
+        }
+    }
+
+}
+
+
+
+
