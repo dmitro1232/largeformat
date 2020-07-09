@@ -580,6 +580,7 @@
 
 .calc {
     margin-top: 70px;
+    margin-bottom: 80px;
     display: flex;
 
     &__left {
@@ -754,6 +755,9 @@
     }
     .mob-tl{
         display: flex;
+    }
+    .specifications__title {
+        margin-top: 50px;
     }
 }
 
