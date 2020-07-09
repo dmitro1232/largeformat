@@ -30,7 +30,13 @@ $(document).ready(function () {
         asNavFor: '.slider-big',
         dots: false,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 490,
+            settings: {
+                slidesToShow: 4,
+            }
+        }]
     });
 });
 
@@ -121,14 +127,17 @@ $('.parameters__content').click(function () {
 
 
 
+$(".radio-btn").click(function (e) {
+    e.preventDefault();
+    $(".radio-btn").removeClass('radio-btn-active');
+    $(this).addClass('radio-btn-active');
+});
 
-
-
-
-
-
-
-
+$(".time-btn").click(function (e) {
+    e.preventDefault();
+    $(".time-btn").removeClass('time-btn-active');
+    $(this).addClass('time-btn-active');
+});
 
 
 
