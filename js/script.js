@@ -136,8 +136,6 @@ $('.parameters__content').click(function () {
 });
 //END PARAMETERS
 
-
-
 $(".radio-btn").click(function (e) {
     e.preventDefault();
     $(".radio-btn").removeClass('radio-btn-active');
@@ -150,6 +148,21 @@ $(".time-btn").click(function (e) {
     $(this).addClass('time-btn-active');
 });
 
+
+
+
+$('.bot-sec ').click(function () {
+    $(this).toggleClass('bot-sec-active');
+});
+$('.o-specif').click(function () {
+    event.stopPropagation();
+});
+$('.o-info__sum').click(function () {
+    event.stopPropagation();
+});
+// $('.o-info__btn').click(function () {
+//     $('.o-specif').toggleClass('o-specif-active');
+// });
 
 
 // youtube script
