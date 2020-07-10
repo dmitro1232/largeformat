@@ -720,7 +720,8 @@
 
 
 
-.tag {
+.tag,
+.tag-2 {
     display: inline-block;
     margin: 5px 5px 5px 0 !important;
 
@@ -753,6 +754,24 @@
             &:hover {
                 color: #fff;
             }
+        }
+    }
+}
+.tag-2{
+    position: relative;
+    a{
+        padding: 3px 33px 3px 10px;
+        background-image: none;
+        position: relative;
+    }
+    .cls{
+        top: -2px;
+        right: 12px;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        img{
+            width: 100%;
         }
     }
 }

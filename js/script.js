@@ -15,6 +15,8 @@ $(document).ready(function () {
         }]
     });
 
+
+
     $('.slider-big').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -38,16 +40,25 @@ $(document).ready(function () {
             }
         }]
     });
+
+
+
+    $('.gal-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.gal-nav'
+    });
+    $('.gal-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.gal-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
 });
-
-
-
-////
-/////    МАСКА ТЕЛЕФОНА
-/////
-// $(document).ready(function () {
-//     $("#phone").mask("+38 (099) 99-99-999");
-// });
 
 
 

@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/unite-gallery.css">
+    <link rel="stylesheet" href="./css/ug-theme-default.css">
     <link rel="stylesheet" href="./slick/slick.css">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <!-- OTHER -->
 </head>
 
@@ -390,7 +393,10 @@
                                 <p class="txt-1">Либо выберите готовый шаблон или закажите индивидуальный проект:</p>
 
                                 <div class="choose flx">
-                                    <button class="btn-grad-sm">каталог шаблонов</button>
+                                    <button type="button" class="btn-grad-sm" data-toggle="modal"
+                                        data-target="#mod-a">каталог шаблонов</button>
+
+                                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mod-a"> Launch demo modal </button> -->
 
                                     <div class="chosen flx-cen">
                                         <p class="chosen__t txt-4">Выбрано:</p>
@@ -427,6 +433,7 @@
                                                     <option>На пружине</option>
                                                     <option>Без пружины</option>
                                                 </select>
+                                                <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
                                             </span>
                                             <div class="gk-img">
                                                 <img src="img/news/post__3.png" alt="">
@@ -452,6 +459,7 @@
                                                         <option>Брошюра Евро (99 х 210)</option>
                                                         <option>Брошюра Евро (290 х 400)</option>
                                                     </select>
+                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
                                                 </span>
                                             </div>
                                             <p class="or txt-4 str">или</p>
@@ -493,6 +501,7 @@
                                                         <option>С подложкой</option>
                                                         <option>Без нее</option>
                                                     </select>
+                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
                                                 </span>
                                             </div>
                                             <div class="size__standart flx">
@@ -501,6 +510,7 @@
                                                         <option>Мелованная глянцевая 90 г</option>
                                                         <option>Матовая 100 г</option>
                                                     </select>
+                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
                                                 </span>
                                             </div>
                                         </div>
@@ -550,6 +560,194 @@
             </div>
         </div>
         <!-- container -->
+
+
+
+        <div class="modal fade" id="mod-a" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content templ-w">
+                    <div class="mod-t">
+                        <h4>Шаблоны Каталогов / Брошюр (42)</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="img/icons/close.svg" alt=""></span>
+                        </button>
+                    </div>
+                    <!-- modal-header -->
+                    <div class="modal-body mb">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+                                <div class="col-md-7">
+                                    <div class="scrl">
+
+                                        <div class="layout">
+                                            <div class="layout__head">
+                                                <span class="layout__num"># 01</span>
+                                                <span class="layout__stat txt-4">Выбрать</span>
+                                            </div>
+                                            <!-- layout__head -->
+
+                                            <div class="layout__body">
+
+                                                <!-- <div id="gallery" style="display: none;">
+
+                                                    <img alt="Image 1 Title" src="img/template/template-1.png"
+                                                        data-image="images/image1.jpg"
+                                                        data-description="Image 1 Description">
+
+                                                    <img alt="Image 2 Title" src="img/template/template-2.png"
+                                                        data-image="images/image02.jpg"
+                                                        data-description="Image 2 Description">
+
+                                                    <img alt="Image 1 Title" src="img/template/template-1.png"
+                                                        data-image="images/image1.jpg"
+                                                        data-description="Image 1 Description">
+
+                                                    <img alt="Image 2 Title" src="img/template/template-2.png"
+                                                        data-image="images/image02.jpg"
+                                                        data-description="Image 2 Description">
+
+                                                </div> -->
+
+                                                <div class="gal-for">
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                </div>
+
+                                                <div class="gal-nav">
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <!-- layout__body -->
+                                        </div>
+                                        <!-- layout -->
+
+
+                                    </div>
+                                    <!-- scrl -->
+                                </div>
+
+
+
+
+
+                                <div class="col-md-5">
+
+                                    <div class="temp-filt">
+
+                                        <div class="temp-filt__goto">
+                                            <p class="str txt-4">Перейти к шаблону</p>
+                                            <input class="input-4" type="text" placeholder="#">
+                                        </div>
+
+                                        <div class="temp-filt__set">
+                                            <h6 class="title-3">Фильтры</h6>
+
+                                            <form action="">
+                                                <div class="flx-btw o-b">
+                                                    <span class="form-control__wrp">
+                                                        <select class="form-control slct">
+                                                            <option>Тема</option>
+                                                            <option>Тема 2</option>
+                                                        </select>
+                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
+                                                    </span>
+                                                    <span class="form-control__wrp">
+                                                        <select class="form-control slct">
+                                                            <option>Цвет</option>
+                                                            <option>цвет 2</option>
+                                                        </select>
+                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
+                                                    </span>
+                                                </div>
+
+
+                                                <span class="form-control__wrp">
+                                                    <select class="form-control slct">
+                                                        <option>Характеристика</option>
+                                                        <option>Характеристика-2</option>
+                                                    </select>
+                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
+                                                </span>
+                                            </form>
+
+                                            <div class="tag-s">
+                                                <div class="tag-2">
+                                                    <a href="#!">Бизнес</a>
+                                                    <div class="cls"><img src="img/icons/close-2.svg" alt=""></div>
+                                                </div>
+                                                <div class="tag-2">
+                                                    <a href="#!">Медицина</a>
+                                                    <div class="cls"><img src="img/icons/close-2.svg" alt=""></div>
+                                                </div>
+                                                <div class="tag-2">
+                                                    <a href="#!">строгий</a>
+                                                    <div class="cls"><img src="img/icons/close-2.svg" alt=""></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- temp-filt__set -->
+
+                                    </div>
+                                    <!-- temp-filt -->
+
+
+                                    <div class="tpl-other">
+                                        <p class="txt-2">Выберите понравившийся шаблон и нажмите</p>
+                                        <div class="tpl-other__bt">
+                                            <button class="btn-2">Прикрепить шаблон</button>
+
+                                            <div class="cht">
+                                                <a class="link-7" href="#!">Выбран шаблон # 02</a>
+                                                <img class="chosen__tag-close" src="img/icons/tag-c.svg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- tpl-other__bt -->
+                                    </div>
+                                    <!-- tpl-other -->
+
+
+                                    <div class="order-t">
+                                        <p class="txt-1">Если ни один шаблон не подошёл, Вы можете заказать у наших
+                                            специалистов разработку уникального дизайна.</p>
+
+                                        <button class="btn-grad-sm">заказать дизайн</button>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal-body -->
+                </div>
+                <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+        </div>
+        <!-- modal -->
 
 
 
@@ -608,9 +806,9 @@
                         <div class="mob-tl__item">
                             <span class="str txt-4">Сроки *</span>
                             <select class="form-control slct">
-                                <option>4 д  (24.03)</option>
+                                <option>4 д (24.03)</option>
                                 <option>5 дней (12.03)</option>
-                                <option>6 д  (26.03)</option>
+                                <option>6 д (26.03)</option>
                             </select>
                         </div>
                         <div class="mob-tl__item">
@@ -818,7 +1016,8 @@
 
                     <span class="calc__sign"> = </span>
 
-                    <div class="calc__sum"><span class="calc__sum-vl">4 601₴</span><span class="calc__sum-trg">(тираж 100 шт.)</span></div>
+                    <div class="calc__sum"><span class="calc__sum-vl">4 601₴</span><span class="calc__sum-trg">(тираж
+                            100 шт.)</span></div>
                 </div>
 
                 <div class="calc__right">
@@ -1062,8 +1261,16 @@
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/ug-theme-grid.js"></script>
+    <script type="text/javascript" src="./js/unitegallery.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript">
+        jQuery("#gallery").unitegallery({
+            gallery_theme: "grid",
+            theme_panel_position: "right"
+        });
+    </script>
 
 </body>
 
