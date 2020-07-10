@@ -2969,11 +2969,17 @@ button {
   margin-top: 20px;
   margin-bottom: 20px; }
 
-@media screen and (max-width: 420px) {
-  .order-list__item {
-    padding: 40px 10px; }
-  .checkout__wrapp {
-    padding: 20px 10px; } }
+@media screen and (max-width: 992px) {
+  .par-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-flow: column !important;
+    flex-flow: column !important; }
+    .par-sec .del-i:last-child {
+      margin-top: 30px; } }
 
 @media screen and (max-width: 767px) {
   .check-row {
@@ -2984,6 +2990,12 @@ button {
   .checkout__wrapp {
     margin-bottom: 40px;
     margin-top: 40px !important; } }
+
+@media screen and (max-width: 420px) {
+  .order-list__item {
+    padding: 40px 10px; }
+  .checkout__wrapp {
+    padding: 20px 10px; } }
 
 .modal-dialog {
   max-width: 1110px !important; }

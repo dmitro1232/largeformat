@@ -239,14 +239,21 @@ $color2: #2173EF;
 }
 
 
-@media screen and (max-width: 420px){
-    .order-list__item{
-        padding: 40px 10px;
-    }
-    .checkout__wrapp{
-        padding: 20px 10px;
+
+@media screen and (max-width: 992px){
+    .par-sec{
+        display: flex;
+        flex-flow: column !important;
+        .del-i{
+            &:last-child {
+                // margin-left: 0;
+                margin-top: 30px;
+            }
+        }
     }
 }
+
+
 @media screen and (max-width: 767px){
     .check-row{
         flex-flow: column-reverse;
@@ -254,5 +261,15 @@ $color2: #2173EF;
     .checkout__wrapp{
         margin-bottom: 40px;
         margin-top: 40px !important; 
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .order-list__item{
+        padding: 40px 10px;
+    }
+    .checkout__wrapp{
+        padding: 20px 10px;
     }
 }
