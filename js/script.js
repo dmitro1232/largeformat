@@ -42,22 +42,6 @@ $(document).ready(function () {
     });
 
 
-
-    $('.gal-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.gal-nav'
-    });
-    $('.gal-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.gal-for',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
 });
 
 

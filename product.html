@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="./css/unite-gallery.css">
-    <link rel="stylesheet" href="./css/ug-theme-default.css">
     <link rel="stylesheet" href="./slick/slick.css">
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="./css/flexslider.css">
     <!-- OTHER -->
 </head>
 
@@ -593,52 +591,159 @@
 
                                             <div class="layout__body">
 
-                                                <!-- <div id="gallery" style="display: none;">
+                                                <div class="slider__wrap">
+                                                    <div class="slider-gallery">
 
-                                                    <img alt="Image 1 Title" src="img/template/template-1.png"
-                                                        data-image="images/image1.jpg"
-                                                        data-description="Image 1 Description">
+                                                        <div class="slider-gallery-img">
+                                                            <img id="image" src="img/template/1.jpg" alt="" />
+                                                            <div class="slider-nav">
+                                                                <div class="nav-zoom">
+                                                                    <img src="img/template/icons/zoom.svg" alt="">
+                                                                </div>
+                                                                <div class="nav-arrow">
+                                                                    <div class="nav-arrow-up next slider-link">
+                                                                        <img src="img/template/icons/arrow-up.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="nav-arrow-down prev slider-link">
+                                                                        <img src="img/template/icons/arrow-down.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- slider-gallery-img -->
 
-                                                    <img alt="Image 2 Title" src="img/template/template-2.png"
-                                                        data-image="images/image02.jpg"
-                                                        data-description="Image 2 Description">
+                                                        <div class="slider-gallery-block">
+                                                            <div class="slider-gallery-block-item active-opacity">
+                                                                <img class="img" src="img/template/1.jpg" alt=""
+                                                                    data-img="img/template/1.jpg" />
+                                                            </div>
 
-                                                    <img alt="Image 1 Title" src="img/template/template-1.png"
-                                                        data-image="images/image1.jpg"
-                                                        data-description="Image 1 Description">
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/2.jpg" alt=""
+                                                                    data-img="img/template/2.jpg" />
+                                                            </div>
 
-                                                    <img alt="Image 2 Title" src="img/template/template-2.png"
-                                                        data-image="images/image02.jpg"
-                                                        data-description="Image 2 Description">
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/3.jpg" alt=""
+                                                                    data-img="img/template/3.jpg" />
+                                                            </div>
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/4.jpg" alt=""
+                                                                    data-img="img/template/4.jpg" />
+                                                            </div>
 
-                                                </div> -->
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/5.jpg" alt=""
+                                                                    data-img="img/template/5.jpg" />
+                                                            </div>
 
-                                                <div class="gal-for">
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/6.jpg" alt=""
+                                                                    data-img="img/template/6.jpg" />
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- slider-gallery-block -->
+                                                    </div>
+                                                    <!-- slider-gallery -->
+
+                                                    <div class="img_popup">
+                                                        <div class="img_popup_full"><img src="" alt="Popup Image">
+                                                            <div class="close_btn"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- img_popup -->
+
                                                 </div>
-
-                                                <div class="gal-nav">
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                    <div><img src="img/template/template-1.png" alt=""></div>
-                                                </div>
+                                                <!-- slider__wrap -->
                                             </div>
                                             <!-- layout__body -->
                                         </div>
                                         <!-- layout -->
 
+
+                                        <div class="layout">
+                                            <div class="layout__head">
+                                                <span class="layout__num"># 02</span>
+                                                    <span class="layout__stat layout__stat-active txt-4">Выбрано</span>
+                                            </div>
+                                            <!-- layout__head -->
+
+                                            <div class="layout__body">
+
+                                                <div class="slider__wrap">
+                                                    <div class="slider-gallery">
+
+                                                        <div class="slider-gallery-img">
+                                                            <img id="image" src="img/template/11.jpg" alt="" />
+                                                            <div class="slider-nav">
+                                                                <div class="nav-zoom">
+                                                                    <img src="img/template/icons/zoom.svg" alt="">
+                                                                </div>
+                                                                <div class="nav-arrow">
+                                                                    <div class="nav-arrow-up next slider-link">
+                                                                        <img src="img/template/icons/arrow-up.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="nav-arrow-down prev slider-link">
+                                                                        <img src="img/template/icons/arrow-down.svg"
+                                                                            alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- slider-gallery-img -->
+
+                                                        <div class="slider-gallery-block">
+                                                            <div class="slider-gallery-block-item active-opacity">
+                                                                <img class="img" src="img/template/11.jpg" alt=""
+                                                                    data-img="img/template/11.jpg" />
+                                                            </div>
+
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/22.jpg" alt=""
+                                                                    data-img="img/template/22.jpg" />
+                                                            </div>
+
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/33.jpg" alt=""
+                                                                    data-img="img/template/33.jpg" />
+                                                            </div>
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/44.jpg" alt=""
+                                                                    data-img="img/template/44.jpg" />
+                                                            </div>
+
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/55.jpg" alt=""
+                                                                    data-img="img/template/55.jpg" />
+                                                            </div>
+
+                                                            <div class="slider-gallery-block-item">
+                                                                <img class="img" src="img/template/66.jpg" alt=""
+                                                                    data-img="img/template/66.jpg" />
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- slider-gallery-block -->
+                                                    </div>
+                                                    <!-- slider-gallery -->
+
+                                                    <div class="img_popup">
+                                                        <div class="img_popup_full"><img src="" alt="Popup Image">
+                                                            <div class="close_btn"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- img_popup -->
+
+                                                </div>
+                                                <!-- slider__wrap -->
+                                            </div>
+                                            <!-- layout__body -->
+                                        </div>
+                                        <!-- layout -->
 
                                     </div>
                                     <!-- scrl -->
@@ -667,14 +772,16 @@
                                                             <option>Тема</option>
                                                             <option>Тема 2</option>
                                                         </select>
-                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
+                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg"
+                                                            alt="">
                                                     </span>
                                                     <span class="form-control__wrp">
                                                         <select class="form-control slct">
                                                             <option>Цвет</option>
                                                             <option>цвет 2</option>
                                                         </select>
-                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
+                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg"
+                                                            alt="">
                                                     </span>
                                                 </div>
 
@@ -1261,16 +1368,9 @@
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/ug-theme-grid.js"></script>
-    <script type="text/javascript" src="./js/unitegallery.min.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
-    <script src="./js/jquery.maskedinput.min.js"></script>
-    <script type="text/javascript">
-        jQuery("#gallery").unitegallery({
-            gallery_theme: "grid",
-            theme_panel_position: "right"
-        });
-    </script>
 
 </body>
 
