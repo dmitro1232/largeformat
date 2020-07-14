@@ -992,7 +992,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #B4B4B4;
-
+        padding: 0;
         &:focus {
             &::placeholder {
                 color: transparent;
@@ -1059,6 +1059,30 @@
     color: #2E2E2E;
     select {
         border: none;
+    }
+}
+
+.select-3{
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #2E2E2E;
+    display: flex;
+    select {
+        border: none;
+        width: 100% !important;
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 

@@ -144,9 +144,31 @@ $('.o-specif').click(function () {
 $('.o-info__sum').click(function () {
     event.stopPropagation();
 });
-// $('.o-info__btn').click(function () {
-//     $('.o-specif').toggleClass('o-specif-active');
-// });
+
+
+
+
+
+
+
+
+
+
+
+$('#styled-checkbox-4').on('click', function () {
+    if ( $(this).is(':checked') ) {
+        $('.no-disp').toggleClass('no-disp-active');
+    } else {
+        $('.no-disp').removeClass('no-disp-active');
+    }
+})
+
+
+
+
+
+
+
 
 
 // youtube script
