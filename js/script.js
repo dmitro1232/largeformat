@@ -42,6 +42,168 @@ $(document).ready(function () {
     });
 
 
+
+
+
+
+    // step sclicks
+    $('.step-content').hide();
+    $('.step-content1').show();
+
+    $('.step1_btnMob').on('click', function () {
+        $('.step-content').hide();
+        $('.step-content2').fadeIn();
+        $('.step-nav').css('background-size', '50%');
+        $('.step_num1').text('✓');
+        $('.step1').addClass('step-mobile');
+        $('.step2').removeClass('step-mobile');
+    });
+
+    $('.step2_btnMob').on('click', function () {
+        $('.step-content').hide();
+        $('.step-content3').fadeIn();
+        $('.step-nav').css('background-size', '75%');
+        $('.step_num2').text('✓');
+        $('.step2').addClass('step-mobile');
+        $('.step3').removeClass('step-mobile');
+    });
+
+    $('.step3_btnMob').on('click', function () {
+        if (
+
+            $('.step_surname').val().trim().length >= 2 &&
+            $('.step_name').val().trim().length >= 2 &&
+            $('.step_adress').val().trim().length >= 3 &&
+            $('.step_phone').val().trim().length >= 8 &&
+            $('.step_email').val().trim().length >= 5) {
+            $('.step-content').hide();
+            $('.step-content4').fadeIn();
+            $('.step-nav').css('background-size', '100%');
+            $('.step_num3').text('✓');
+            $('.step3').addClass('step-mobile');
+            $('.step4').removeClass('step-mobile');
+            // borders
+            $('.step_surname').parent().css('border', '1px solid green');
+            $('.step_name').parent().css('border', '1px solid green');
+            $('.step_adress').parent().css('border', '1px solid green');
+            $('.step_phone').parent().css('border', '1px solid green');
+            $('.step_email').parent().css('border', '1px solid green');
+
+        } else {
+
+            if ($('.step_surname').val().trim().length < 2) {
+                $('.step_surname').parent().css('border', '1px solid red');
+            } else {
+                $('.step_surname').parent().css('border', '1px solid green');
+            }
+            if ($('.step_name').val().trim().length < 2) {
+                $('.step_name').parent().css('border', '1px solid red');
+            } else {
+                $('.step_name').parent().css('border', '1px solid green');
+            }
+            if ($('.step_adress').val().trim().length < 3) {
+                $('.step_adress').parent().css('border', '1px solid red');
+            } else {
+                $('.step_adress').parent().css('border', '1px solid green');
+            }
+            if ($('.step_phone').val().trim().length < 8) {
+                $('.step_phone').parent().css('border', '1px solid red');
+            } else {
+                $('.step_phone').parent().css('border', '1px solid green');
+            }
+            if ($('.step_email').val().trim().length < 5) {
+                $('.step_email').parent().css('border', '1px solid red');
+            } else {
+                $('.step_email').parent().css('border', '1px solid green');
+            }
+        }
+    });
+
+    $('.step4_btnMob').on('click', function () {
+        $('.step_num4').text('✓');
+        $('.step__final').text('Спасибо за заявку');
+        $('.step4_btnMob').fadeOut();
+    });
+
+
+
+    //функции кнопок "далее"
+    $('.step1_btn').on('click', function () {
+        $('.step-content').hide();
+        $('.step-content2').fadeIn();
+        $('.step-nav').css('background-size', '50%');
+        $('.step_num1').text('✓');
+        $('.step2').addClass('step-mobile');
+    });
+    $('.step2_btn').on('click', function () {
+        $('.step-content').hide();
+        $('.step-content3').fadeIn();
+        $('.step-nav').css('background-size', '75%');
+        $('.step_num2').text('✓');
+        $('.step3').addClass('step-mobile');
+    });
+
+    $('.step3_btn').on('click', function () {
+        if (
+            $('.step_surname').val().trim().length >= 2 &&
+            $('.step_name').val().trim().length >= 2 &&
+            $('.step_adress').val().trim().length >= 3 &&
+            $('.step_phone').val().trim().length >= 8 &&
+            $('.step_email').val().trim().length >= 5) {
+            $('.step-content').hide();
+            $('.step-content4').fadeIn();
+            $('.step-nav').css('background-size', '100%');
+
+            $('.step_num3').text('✓');
+            $('.step4').addClass('step-mobile');
+            // borders
+            $('.step_surname').parent().css('border', '1px solid green');
+            $('.step_name').parent().css('border', '1px solid green');
+            $('.step_adress').parent().css('border', '1px solid green');
+            $('.step_phone').parent().css('border', '1px solid green');
+            $('.step_email').parent().css('border', '1px solid green');
+        } else {
+
+            if ($('.step_surname').val().trim().length < 2) {
+                $('.step_surname').parent().css('border', '1px solid red');
+            } else {
+                $('.step_surname').parent().css('border', '1px solid green');
+            }
+            if ($('.step_name').val().trim().length < 2) {
+                $('.step_name').parent().css('border', '1px solid red');
+            } else {
+                $('.step_name').parent().css('border', '1px solid green');
+            }
+            if ($('.step_adress').val().trim().length < 3) {
+                $('.step_adress').parent().css('border', '1px solid red');
+            } else {
+                $('.step_adress').parent().css('border', '1px solid green');
+            }
+            if ($('.step_phone').val().trim().length < 8) {
+                $('.step_phone').parent().css('border', '1px solid red');
+            } else {
+                $('.step_phone').parent().css('border', '1px solid green');
+            }
+            if ($('.step_email').val().trim().length < 5) {
+                $('.step_email').parent().css('border', '1px solid red');
+            } else {
+                $('.step_email').parent().css('border', '1px solid green');
+            }
+        }
+
+
+    });
+    $('.step4_btn').on('click', function () {
+        // $('.step').css('border-right', '0'); //удаление полей step
+        $('.step4_btn').fadeOut(); // исчезновение кнопки после клика
+        $('.step_num4').text('✓');
+        $('.step__final').text('Спасибо за заявку');
+    });
+
+    //функции кнопок "шаг1-2-3-4"
+
+
+
 });
 
 
@@ -156,7 +318,7 @@ $('.o-info__sum').click(function () {
 
 
 $('#styled-checkbox-4').on('click', function () {
-    if ( $(this).is(':checked') ) {
+    if ($(this).is(':checked')) {
         $('.no-disp').toggleClass('no-disp-active');
     } else {
         $('.no-disp').removeClass('no-disp-active');

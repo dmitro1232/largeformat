@@ -329,27 +329,47 @@
 
                     <div class="step-nav">
 
-                        <div class="step first">
-                            <div class="step__num">1</div>
+                        <div class="step first step1">
+                            <div class="step__num step_num1">1</div>
                             <span class="">Выбор продукции</span>
+                            <div class="step_btnMob step1_btnMob"><svg width="14" height="24" viewBox="0 0 14 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 23L13 12L1 1" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></div>
                         </div>
 
 
-                        <div class="step second">
-                            <div class="step__num">2</div>
-                            <span class="">Выбор продукции</span>
+                        <div class="step second step2 step-mobile">
+                            <div class="step__num step_num2">2</div>
+                            <span class="">Выбор стилистики</span>
+                            <div class="step_btnMob step2_btnMob"><svg width="14" height="24" viewBox="0 0 14 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 23L13 12L1 1" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></div>
                         </div>
 
 
-                        <div class="step third">
-                            <div class="step__num">3</div>
-                            <span class="">Выбор продукции</span>
+                        <div class="step third step3 step-mobile">
+                            <div class="step__num step_num3">3</div>
+                            <span class="">Общие сведения</span>
+                            <div class="step_btnMob step3_btnMob"><svg width="14" height="24" viewBox="0 0 14 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 23L13 12L1 1" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></div>
                         </div>
 
 
-                        <div class="step fourth">
-                            <div class="step__num">4</div>
-                            <span class="">Выбор продукции</span>
+                        <div class="step fourth step4 step-mobile">
+                            <div class="step__num step_num4">4</div>
+                            <span class="step__final">Заверщение</span>
+                            <div class="step_btnMob step4_btnMob"><svg width="14" height="24" viewBox="0 0 14 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 23L13 12L1 1" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></div>
                         </div>
 
                     </div>
@@ -358,9 +378,9 @@
 
 
 
-                <div class="row step-content">
+                <div class="row step-content step-content1">
 
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                         <div>
                             <p class="str txt-4">Раздел *</p>
                             <span class="select-3">
@@ -408,13 +428,13 @@
                     </div>
 
 
-                    <div class="col-md-5 obrz">
+                    <div class="col-xl-5 col-lg-6 col-md-5 col-sm-6 col-12 obrz">
                         <img src="img/obazet.png" alt="">
                     </div>
 
 
-                    <div class="col-md-3 next-sec">
-                        <button class="btn-3 next">Далее <img src="img/icons/next.svg" alt=""></button>
+                    <div class="col-xl-3 col-lg-2 col-md-3 col-sm-12 col-12 next-sec">
+                        <button class="btn-3 next step1_btn">Далее <img src="img/icons/next.svg" alt=""></button>
                     </div>
 
                 </div>
@@ -424,8 +444,8 @@
 
 
 
-                <div class="row step-content">
-                    <div class="col-md-5">
+                <div class="row step-content step-content2">
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
                         <p class="str txt-4">Предпочитаемые цвета *</p>
                         <span class="select-3">
                             <select class="">
@@ -451,8 +471,9 @@
                         <div class="upld">
                             <h5 class="txt-5">Приложите примеры, которые Вам нравятся</h5>
                             <div class="upld__wrp">
-                                <div class="upld__img">
-
+                                <div class="upld__img" style="background-image: url(../img/upl.png);">
+                                    <!-- <img src="img/upl.png" alt=""> -->
+                                    <div class="upld__img-remove"><img src="img/icons/trash.svg" alt=""></div>
                                 </div>
                                 <div class="upld__right">
                                     <p>Допустимые форматы: <span class="str">JPG, GIF, PNG</span></p>
@@ -463,53 +484,45 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 text-sec">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-sec">
                         <ul class="color-picker">
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input id="cl" type="text">
                             </li>
 
                             <li class="color-picker__item">
                                 <label for="cl"></label>
-
                                 <input type="text">
                             </li>
                         </ul>
@@ -526,7 +539,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-9 wishes">
+                    <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 col-12 wishes">
                         <h5 class="txt-4 str">Почему Вам нравится именно этот логотип?</h5>
                         <div class="s-line__ip">
                             <textarea class="textarea-1" placeholder="Ваши мысли">
@@ -534,8 +547,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 next-sec">
-                        <button class="btn-3 next">Далее <img src="img/icons/next.svg" alt=""></button>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12 next-sec">
+                        <button class="btn-3 next step2_btn">Далее <img src="img/icons/next.svg" alt=""></button>
                     </div>
                 </div>
                 <!-- step-content -->
@@ -544,44 +557,68 @@
 
 
 
-                <div class="row step-content">
+                <div class="row step-content step-content3">
 
                     <div class="col-md-9">
                         <div class="s-line">
                             <div class="s-line__ip">
                                 <p class="str txt-4">Фамилия *</p>
-                                <p class="input-1"><input type="text" placeholder="Иванов"></p>
+                                <p class="input-1"><input class="step-input step_surname" type="text"
+                                        placeholder="Иванов"></p>
                             </div>
                             <div class="s-line__ip">
                                 <p class="str txt-4">Имя *</p>
-                                <p class="input-1"><input type="text" placeholder="Иван"></p>
+                                <p class="input-1"><input class="step-input step_name" type="text" placeholder="Иван">
+                                </p>
                             </div>
                             <div class="s-line__ip">
-                                <p class="str txt-4">Телефон *</p>
-                                <p class="input-1"><input type="text" placeholder="+380 000 000 00 00"></p>
+                                <p class="str txt-4">Отчество </p>
+                                <p class="input-1"><input class="step-input step_patronymic" type="text"
+                                        placeholder="Иванович"></p>
                             </div>
                         </div>
 
                         <div class="s-line">
                             <div class="s-line__ip">
-                                <p class="str txt-4">Название компании</p>
+                                <p class="str txt-4">Название компании </p>
                                 <p class="input-1"><input type="text" placeholder="ТОО «Рога и копыта»"></p>
                             </div>
                             <div class="s-line__ip">
-                                <p class="str txt-4">Стороны *</p>
+                                <p class="str txt-4">Сфера деятельности </p>
                                 <span class="select-3">
-                                    <select class="">
-                                        <option>Двусторонняя</option>
-                                        <option>1 Двусторонняя</option>
-                                        <option>2 Двусторонняя</option>
+                                    <select class="step-inputLong step_work">
+                                        <option>Сельское хозяйство</option>
+                                        <option>Сельское хозяйство2</option>
+                                        <option>Сельское хозяйство3</option>
                                     </select>
                                     <img class="fic" src="img/icons/ar-sel.svg" alt="">
                                 </span>
                             </div>
                         </div>
+
                         <div class="s-line">
                             <div class="s-line__ip">
-                                <textarea class="textarea-1" placeholder="Ваши мысли">
+                                <p class="str txt-4">Адрес *</p>
+                                <p class="input-1"><input class="step-input step_adress" type="text"
+                                        placeholder="г.Киев, ул.Крещатик 14"></p>
+                            </div>
+                            <div class="s-line__ip">
+                                <p class="str txt-4">Телефон *</p>
+                                <p class="input-1"><input class="step-input step_phone" type="text"
+                                        placeholder="+380 000 000 00 00"></p>
+                            </div>
+                            <div class="s-line__ip">
+                                <p class="str txt-4">E-mail *</p>
+                                <p class="input-1"><input class="step-input step_email" type="text"
+                                        placeholder="user@gmail.com"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="s-line">
+                            <div class="s-line__ip">
+                                <p class="str txt-4">Какую информацию Вы хотите разместить на изделии? </p>
+                                <textarea class="textarea-1" class="step-input step_info" placeholder="Ваши мысли">
                                 </textarea>
                             </div>
                         </div>
@@ -589,7 +626,7 @@
 
 
                     <div class="col-md-3 next-sec">
-                        <button class="btn-3 next">Далее <img src="img/icons/next.svg" alt=""></button>
+                        <button class="btn-3 next step3_btn">Далее <img src="img/icons/next.svg" alt=""></button>
                     </div>
 
                 </div>
@@ -597,13 +634,13 @@
 
 
 
-                <div class="row step-content">
+                <div class="row step-content step-content4">
 
-                    <div class="col-md">
+                    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-12 col-12 dn-im">
                         <img src="img/d-brf.png" alt="">
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                         <h3 class="title-3 5 brf-tt">Бриф заполнен, благодарим Вас!</h3>
                         <p class="txt-2">В ближайшее время менеджер свяжется с вами, сообщит стоимость и прочие условия
                             сотрудничества.</p>
@@ -636,8 +673,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 next-sec">
-                        <button class="btn-3 next">Далее <img src="img/icons/next.svg" alt=""></button>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-2 col-12 next-sec">
+                        <button class="btn-3 next step4_btn">Далее <img src="img/icons/next.svg" alt=""></button>
                     </div>
 
 
