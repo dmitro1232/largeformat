@@ -1,4 +1,67 @@
 $(document).ready(function () {
+    
+
+
+    //login registration forms
+
+    $('.re-lo-btn').click(function () {
+        $('.re-lo-btn').removeClass('re-lo-btn-active');
+        $(this).toggleClass('re-lo-btn-active');
+    });
+    $('.pa-res').click(function () {
+        $('.login').hide();
+        $('.pass-reset').show();
+    });
+    $('.cancel').click(function () {
+        $('.login').show();
+        $('.pass-reset').hide();
+    });
+    
+    $('.registration').click(function () {
+        $('.lsflx').hide();
+        $('.from-reg').show();
+    });
+    $('.auth').click(function () {
+        $('.lsflx').show();
+        $('.from-reg').hide();
+    });
+
+    $('#next-reg-1').on('click', function () {
+
+        $('.reg-step-line').css('background-size', '66.6%');
+        $('.reg-step__item:nth-child(2)').css('color', '#fff');
+        $('.reg-step-1').hide();
+
+        var value = $('#select-reg').val();
+        if (
+            value == 2
+        ){
+            $('.reg-step-2-roz').show();
+
+        } else {
+            $('.reg-step-2-opt').show();
+        }
+    });
+
+    $('#next-reg-2-opt').on('click', function () {
+        $('.reg-step-line').css('background-size', '100%');
+        $('.reg-step__item:nth-child(3)').css('color', '#fff');
+        $('.reg-step-2-opt').hide();
+        $('.reg-step-3-opt').show();
+    });
+
+    $('#next-reg-2-roz').on('click', function () {
+        $('.reg-step-line').css('background-size', '100%');
+        $('.reg-step__item:nth-child(3)').css('color', '#fff');
+        $('.reg-step-2-roz').hide();
+        $('.reg-step-3-roz').show();
+    });
+
+    //END login registration forms
+
+
+
+
     $('.header-slider').slick({
         dots: true,
         infinite: true,

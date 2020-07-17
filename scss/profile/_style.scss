@@ -6,11 +6,16 @@
     margin-bottom: 80px;
 }
 
+.mob-cr-page {
+    display: none;
+}
+
 .profile-header {
     border-bottom: 1px solid #C3D9F9;
     display: block;
 }
-.lk-mob-btn{
+
+.lk-mob-btn {
     display: none;
 }
 
@@ -18,6 +23,10 @@
 .profile-menu {
     display: flex;
     justify-content: space-between;
+
+    .mb-men-title {
+        display: none;
+    }
 
     &__list {
         display: flex;
@@ -31,7 +40,7 @@
         margin: 0;
 
         li {
-            margin-right: 0;
+            margin-right: 20px;
 
             a {
                 background-image: url(/img/icons/support.svg);
@@ -49,6 +58,7 @@
         margin-right: 40px;
         padding: 0;
         padding: 40px 0;
+        position: relative;
 
         a {
             font-family: $opensans;
@@ -88,51 +98,25 @@
     }
 }
 
-
-@media (max-width: 867px){
-    .mob-flx-h{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        .lk-mob-btn{
-            display: block;
-            position: relative;
-            margin-top: 20px;
-            span{
-                display: block;
-                width: 24px;
-                height: 2px;
-                background: #2E2E2E;
-                border-radius: 4px;
-                &::before{
-                    position: absolute;
-                    top: 6px;
-                    content: '';
-                    display: block;
-                    width: 24px;
-                    height: 2px;
-                    background: #2E2E2E;
-                    border-radius: 4px;
-                }
-                &::after{
-                    position: absolute;
-                    top: 12px;
-                    content: '';
-                    display: block;
-                    width: 24px;
-                    height: 2px;
-                    background: #2E2E2E;
-                    border-radius: 4px;
-                }
-            }
-        }
-    }
-    .profile-header{
-        display: none;
-    }
+.add {
+    min-width: 24px;
+    min-height: 24px;
+    background: #C03CD6;
+    border-radius: 50px;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -25px;
+    bottom: 54px;
+    padding: 2px;
 }
-
-
 
 
 
@@ -332,17 +316,185 @@
     }
 }
 
-@media (max-width: 767px){
-    .profile-person{
+
+
+@media (max-width: 867px) {
+
+    .profile-title {
+        margin-bottom: 40px;
+    }
+
+    .mob-cr-page {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .mob-flx-h {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .lk-mob-btn {
+            display: block;
+            position: relative;
+            margin-top: 14px;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            position: relative;
+
+            &::before {
+                display: block;
+                content: '!';
+                min-width: 24px;
+                min-height: 24px;
+                background: #C03CD6;
+                border-radius: 50px;
+                font-family: $opensans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                padding: 2px;
+                right: 26px;
+                bottom: -5px;
+            }
+
+            span {
+                display: block;
+                width: 24px;
+                height: 2px;
+                background: #2E2E2E;
+                border-radius: 4px;
+
+                &::before {
+                    position: absolute;
+                    top: 6px;
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    background: #2E2E2E;
+                    border-radius: 4px;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 12px;
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    background: #2E2E2E;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+    .shadw {
+        display: none;
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.306);
+    }
+
+    .shadw-active {
+        display: block !important;
+    }
+
+    .profile-menu {
+        display: none;
+        flex-flow: column;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 100;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+        border-radius: 4px 0px 0px 4px;
+        width: 320px;
+        padding-bottom: 100px;
+    }
+
+    .profile-menu-mobactive {
+        display: flex;
+    }
+
+    .item-active {
+        &::after {
+            display: none !important;
+        }
+    }
+
+    .mb-men-title {
+        display: block !important;
+        background: #2173EF;
+        border-radius: 4px 0px 0px 0px;
+        padding: 20px 40px;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+
+        .title-03 {
+            color: #fff;
+        }
+
+        .mbclos {
+            cursor: pointer;
+        }
+    }
+
+    .profile-menu__list {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .profile-menu__item {
+        width: 100%;
+        padding: 20px 40px;
+        border-bottom: 1px solid #E8E8E8;
+
+        .add {
+            bottom: 17px;
+            right: 20px;
+        }
+    }
+
+    .profile-menu__helpsec {
+        .profile-menu__item {
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .profile-person {
         padding: 40px 0;
     }
 }
 
-@media (max-width: 640px){
-    .overw{
+@media (max-width: 640px) {
+    .overw {
         min-width: 100%;
         overflow-x: scroll;
-        .table-wrap-1{
+
+        .table-wrap-1 {
             min-width: 740px !important;
             position: relative;
         }

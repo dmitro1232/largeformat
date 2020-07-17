@@ -1,0 +1,248 @@
+.reg-log-header {
+    border-bottom: 1px solid #C3D9F9;
+    padding: 40px !important;
+}
+
+.re-lo-btn {
+    background: #fff;
+    border: none;
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C3D9F9;
+    position: relative;
+    padding: 0;
+    margin-right: 40px;
+    transition: .3s;
+
+    &:hover {
+        color: #91b9f5;
+    }
+}
+
+.re-lo-btn-active {
+    color: #2173EF;
+
+    &:hover {
+        color: #2173EF;
+    }
+
+    &::after {
+        background: #2173EF;
+        border-radius: 4px;
+        width: 100%;
+        height: 5px;
+        display: block;
+        content: '';
+        bottom: -43px;
+        position: absolute;
+    }
+}
+
+
+
+
+.lsflx {
+    display: flex;
+    overflow: hidden;
+}
+
+
+.login {
+    min-width: 100%;
+}
+
+.pass-reset {
+    min-width: 100%;
+    display: none;
+}
+
+.auth-title {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2E2E2E;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.reg-log-body {
+    padding: 40px;
+
+    input {
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: normal;
+        color: #2E2E2E;
+    }
+}
+
+.fsa {
+    padding-right: 0 !important;
+}
+
+.login-phone {
+    input {
+        padding-left: 30px;
+    }
+}
+
+.login-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.login-go {
+    padding: 12px 69px;
+}
+
+.pa-res {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #2E2E2E;
+    border-bottom: 1px dashed #B4B4B4;
+}
+
+.code {
+    &__form {
+        width: 120px;
+        padding: 7px 20px;
+        margin-bottom: 10px;
+    }
+    .tpfr{
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        color: #B4B4B4;
+        padding-left: 15px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.rst{
+    padding: 12px 22px !important;
+}
+
+
+
+.from-reg{
+    display: none;
+}
+
+.reg-step{
+    background: linear-gradient(158.47deg, #ECF4FF 15.6%, #FDF1FF 85.6%);
+    border-radius: 100px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    &-line{
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: linear-gradient(130.04deg, #2173EF 15.6%, #C03CD6 85.6%);
+        background-size: 33.3%;
+    }
+
+    &__item{
+        width: 33.3%;
+        padding: 4px 0;
+        font-family: $opensans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        color: #C3D9F9;
+        border-right: 4px solid #fff;
+        text-align: center;
+        &:last-child{
+            border-right: none;
+        }
+    }
+    .onthis{
+        color: #fff;
+    }
+}
+.step-cont{
+    margin-bottom: 20px;
+}
+.nfzk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tpfr{
+        margin-bottom: 0;
+    }
+    .next{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+.reg-step-1{
+    display: block;
+}
+
+
+.reg-step-2-roz,
+.reg-step-2-opt,
+.reg-step-3-roz,
+.reg-step-3-opt{
+    display: none;
+}
+
+
+.reg-step-2-opt,
+.reg-step-2-roz{
+    .nfzk{
+        .s-line__ip{
+            width: 50%;
+        }
+    }
+}
+
+.rgb{
+    float: right;
+}
+
+.step-textarea{
+    height: 100px !important;
+    margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 445px){
+    .re-lo-btn{
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .re-lo-btn-active{
+        &:after{
+            bottom: -24px
+        }
+    }
+    .login-go{
+        padding: 12px 25px;
+    }
+    .reg-log-header{
+        padding: 20px !important;
+    }
+    .reg-log-body{
+        padding: 20px;
+    }
+}

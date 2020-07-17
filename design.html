@@ -115,7 +115,9 @@
                         </div>
                         <!-- catalog-wrap -->
 
-                        <a href="#!3" class="profile"><span>Кабинет</span></a>
+                        <a href="#!3" class="profile" data-toggle="modal"
+                            data-target="#exampleModal"><span>Кабинет</span></a>
+
                         <a href="#!4" class="cart"><span>Корзина</span></a>
 
                         <div class="mob-menu-btn">
@@ -155,7 +157,8 @@
                             <img src="img/icons/search-mob.svg" alt="">
                         </div>
 
-                        <a href="#!3" class="profile"><span>Кабинет</span></a>
+                        <a href="#!3" class="profile" data-toggle="modal"
+                            data-target="#exampleModal"><span>Кабинет</span></a>
 
                         <a href="#!4" class="cart"><span>Корзина</span></a>
 
@@ -240,8 +243,338 @@
 
 
 
-    </header>
 
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="reg-log-header">
+                        <button class="re-lo-btn auth re-lo-btn-active">Авторизация</button>
+                        <button class="re-lo-btn registration">Регистрация</button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="img/icons/close.svg" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="reg-log-body">
+
+
+                        <div class="lsflx">
+                            <div class="login">
+                                <h2 class="auth-title">Вход в личный кабинет</h2>
+
+                                <div class="s-line__ip fsa">
+                                    <p class="str txt-4">Телефон *</p>
+                                    <p class="input-phone login-phone"><input class="" type="text" placeholder="+380">
+                                    </p>
+                                </div>
+                                <div class="s-line__ip fsa">
+                                    <p class="str txt-4">Пароль *</p>
+                                    <p class="input-1 login-password"><input class="" type="password"
+                                            placeholder="•••••••••"></p>
+                                </div>
+                                <div class="login-footer">
+                                    <button class="btn-01-m login-go">Войти</button>
+                                    <button class="pa-res">Забыли пароль?</button>
+                                </div>
+                            </div>
+                            <!-- login -->
+
+                            <div class="pass-reset">
+                                <h2 class="auth-title">Забыли пароль?</h2>
+
+
+                                <p class="text-02">После подтверждения номера телефона Вы получите новый сгенерированный
+                                    пароль.</p>
+
+                                <div class="s-line__ip fsa">
+                                    <p class="str txt-4">Телефон *</p>
+                                    <p class="input-phone login-phone"><input class="" type="text" placeholder="+380">
+                                    </p>
+                                </div>
+                                <div class="s-line__ip fsa code">
+                                    <p class="input-1 code__form"><input class="" type="text"> </p>
+                                    <p class="tpfr">Введите код из СМС</p>
+                                </div>
+
+                                <div class="login-footer">
+                                    <button class="btn-01-m login-go rst">сбросить пароль</button>
+                                    <button class="pa-res cancel">Отмена</button>
+                                </div>
+                            </div>
+                            <!-- pass-reset -->
+                        </div>
+                        <!-- lsflx -->
+
+
+
+
+
+
+                        <div class="from-reg">
+
+
+                            <div class="reg-step">
+                                <div class="reg-step-line">
+                                    <div class="reg-step__item onthis">
+                                        Шаг 1
+                                    </div>
+                                    <!-- reg-step__item -->
+                                    <div class="reg-step__item">
+                                        Шаг 2
+                                    </div>
+                                    <!-- reg-step__item -->
+                                    <div class="reg-step__item">
+                                        Шаг 3
+                                    </div>
+                                    <!-- reg-step__item -->
+                                </div>
+                                <!-- reg-step-line -->
+                            </div>
+                            <!-- reg-step -->
+
+
+
+                            <div class="reg-step-1">
+
+                                <div class="step-cont">
+                                    <div>
+                                        <p class="str txt-4">В каком качестве Вы регистрируетесь? *</p>
+                                        <span class="select-3">
+                                            <select id="select-reg" required>
+                                                <option value="1">Оптовый покупатель</option>
+                                                <option value="2">Розничный покупатель</option>
+                                            </select>
+                                            <img class="fic" src="img/icons/ar-sel.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="s-line__ip fsa">
+                                        <p class="str txt-4">Телефон *</p>
+                                        <p class="input-phone login-phone"><input class="" type="text"
+                                                placeholder="+380" required>
+                                        </p>
+                                    </div>
+                                    <div class="nfzk">
+                                        <div class="s-line__ip fsa code">
+                                            <p class="input-1 code__form"><input class="" type="text"> </p>
+                                            <p class="tpfr">Введите код из СМС</p>
+                                        </div>
+
+                                        <div>
+                                            <button type="submit" id="next-reg-1" class="btn-3 next">Далее <img
+                                                    src="img/icons/next.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- reg-step-1 -->
+
+
+
+
+
+
+
+
+
+                            <div class="reg-step-2-opt">
+
+                                <div class="step-cont">
+                                    <div class="s-line__ip">
+                                        <p class="str txt-4">Название компании *</p>
+                                        <p class="input-1"><input type="text" placeholder="ТОО «Рога и копыта»"></p>
+                                    </div>
+
+                                    <div class="s-line__ip">
+                                        <p class="str txt-4">Род деятельности *</p>
+                                        <span class="select-3">
+                                            <select class="step-inputLong step_work">
+                                                <option>Сельское хозяйство</option>
+                                                <option>Сельское хозяйство2</option>
+                                                <option>Сельское хозяйство3</option>
+                                            </select>
+                                            <img class="fic" src="img/icons/ar-sel.svg" alt="">
+                                        </span>
+                                    </div>
+
+                                    <div class="s-line">
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Фамилия *</p>
+                                            <p class="input-1"><input class="step-input step_surname" type="text"
+                                                    placeholder="Иванов"></p>
+                                        </div>
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Имя *</p>
+                                            <p class="input-1"><input class="step-input step_name" type="text"
+                                                    placeholder="Иван">
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nfzk">
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Отчество </p>
+                                            <p class="input-1"><input class="step-input step_patronymic" type="text"
+                                                    placeholder="Иванович"></p>
+                                        </div>
+                                        <div>
+                                            <button id="next-reg-2-opt" class="btn-3 next">Далее <img
+                                                    src="img/icons/next.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- step-cont -->
+
+                            </div>
+                            <!-- reg-step-2-opt -->
+                            <div class="reg-step-2-roz">
+
+                                <div class="step-cont">
+
+                                    <div class="s-line">
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Фамилия *</p>
+                                            <p class="input-1"><input class="step-input step_surname" type="text"
+                                                    placeholder="Иванов"></p>
+                                        </div>
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Имя *</p>
+                                            <p class="input-1"><input class="step-input step_name" type="text"
+                                                    placeholder="Иван">
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="nfzk">
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Отчество </p>
+                                            <p class="input-1"><input class="step-input step_patronymic" type="text"
+                                                    placeholder="Иванович"></p>
+                                        </div>
+                                        <div>
+                                            <button id="next-reg-2-roz" class="btn-3 next">Далее <img
+                                                    src="img/icons/next.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- step-cont -->
+
+                            </div>
+                            <!-- reg-step-2-roz -->
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="reg-step-3-opt">
+
+                                <div class="step-cont">
+
+                                    <div class="s-line__ip">
+                                        <p class="str txt-4">E-mail *</p>
+                                        <p class="input-1"><input class="step-input step_email" type="text"
+                                                placeholder="user@gmail.com"></p>
+                                    </div>
+                                    <div class="s-line__ip">
+                                        <p class="str txt-4">Адрес *</p>
+                                        <textarea class="textarea-1 step-textarea" placeholder="Киев, ул. Крещатик, 14">
+                                        </textarea>
+                                    </div>
+                                    <div class="s-line">
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">ЕГРПОУ *</p>
+                                            <p class="input-1"><input class="step-input step_surname" type="text"
+                                                    placeholder="32455723"></p>
+                                        </div>
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">ИНН *</p>
+                                            <p class="input-1"><input class="step-input step_name" type="text"
+                                                    placeholder="383717326524">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="s-line">
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Расчётный счёт *</p>
+                                            <p class="input-1"><input class="step-input step_surname" type="text"
+                                                    placeholder="26006010006229"></p>
+                                        </div>
+                                        <div class="s-line__ip">
+                                            <p class="str txt-4">Банк *</p>
+                                            <p class="input-1"><input class="step-input step_name" type="text"
+                                                    placeholder="ПАО «Акцент-Банк»">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button id="next-reg-3" class="btn-01-m next rgb">Зарегистрироваться</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- reg-step-2-opt -->
+                            <div class="reg-step-3-roz">
+
+                                <div class="step-cont">
+
+                                    <div class="s-line__ip">
+                                        <p class="str txt-4">E-mail *</p>
+                                        <p class="input-1"><input class="step-input step_email" type="text"
+                                                placeholder="user@gmail.com"></p>
+                                    </div>
+                                    <div class="s-line__ip">
+                                        <p class="str txt-4">Адрес *</p>
+                                        <textarea class="textarea-1 step-textarea" placeholder="Киев, ул. Крещатик, 14">
+                                        </textarea>
+                                    </div>
+                                    <div>
+                                        <button id="next-reg-3" class="btn-3 next rgb">Зарегистрироваться</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- reg-step-2-roz -->
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <!-- from-reg -->
+
+
+
+
+                    </div>
+                    <!-- reg-log-body -->
+                </div>
+                <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+        </div>
+        <!-- modal -->
+
+
+
+
+
+
+    </header>
+    <!-- header -->
 
 
 

@@ -1,3 +1,256 @@
+button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+// синяя кнопка
+.btn-01-l,
+.btn-01-m,
+.btn-01-s {
+    background: #2173EF;
+    box-shadow: 0px 6px 10px rgba(33, 115, 239, 0.2);
+    border-radius: 50px;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.4s;
+
+    &:hover {
+        background: #0048B6;
+        box-shadow: 0px 3px 5px rgba(33, 115, 239, 0.3);
+        border-radius: 50px;
+    }
+
+    &:active {
+        background: #fff;
+        color: #0048B6;
+        border: 2px solid #0048B6;
+    }
+}
+
+.btn-01-l {
+    padding: 15px 30px;
+}
+
+.btn-01-m {
+    padding: 12px 22px;
+}
+
+.btn-01-s {
+    padding: 8px 15px;
+}
+
+
+// белая кнопка
+.btn-02-l,
+.btn-02-m,
+.btn-02-s {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2E2E2E;
+    transition: 0.4s;
+
+    &:hover {
+        background: #FFFFFF;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+    }
+}
+
+.btn-02-l {
+    padding: 15px 30px;
+}
+
+.btn-02-m {
+    padding: 12px 22px;
+}
+
+.btn-02-s {
+    padding: 8px 15px;
+}
+
+
+
+// градиентная кнопка 
+
+.btn-03-l,
+.btn-03-m,
+.btn-03-s {
+    background: linear-gradient(112.37deg, #2173EF 15.6%, #C03CD6 85.6%);
+    box-shadow: 0px 6px 10px rgba(192, 60, 214, 0.2);
+    border-radius: 50px;
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.4s;
+
+    &:hover {
+        background: linear-gradient(112.37deg, #2173EF 15.6%, #C03CD6 95.6%);
+        box-shadow: 0px 6px 10px rgba(192, 60, 214, 0);
+    }
+}
+
+.btn-03-l {
+    padding: 15px 30px;
+}
+
+.btn-03-m {
+    padding: 12px 22px;
+}
+
+.btn-03-s {
+    padding: 8px 15px;
+}
+
+
+
+
+
+
+
+
+.link-11 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2173EF;
+    border-bottom: 1px solid #C3D9F9;
+    margin: 0;
+}
+
+
+
+
+.title-001 {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.title-01 {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.title-02 {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.title-03 {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.title-04 {
+    font-family: $montAlt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+.title-05 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2E2E2E;
+    margin: 0;
+}
+
+
+
+
+.text-01 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    color: #2E2E2E;
+}
+
+.text-02 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #2E2E2E;
+}
+
+.text-03 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    color: #2E2E2E;
+
+}
+
+.text-04 {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B4B4B4;
+}
+
+
+
+
+
+
+
+
 .title-strong {
     font-family: $montAlt;
     font-style: normal;
@@ -993,6 +1246,7 @@
         line-height: 22px;
         color: #B4B4B4;
         padding: 0;
+
         &:focus {
             &::placeholder {
                 color: transparent;
@@ -1057,12 +1311,13 @@
     font-size: 14px;
     line-height: 140%;
     color: #2E2E2E;
+
     select {
         border: none;
     }
 }
 
-.select-3{
+.select-3 {
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
     border-radius: 4px;
@@ -1075,6 +1330,7 @@
     line-height: 140%;
     color: #2E2E2E;
     display: flex;
+
     select {
         border: none;
         width: 100% !important;
@@ -1099,6 +1355,7 @@
     font-size: 14px;
     line-height: 140%;
     color: #2E2E2E;
+
     input {
         border: none;
         width: 0 auto;
