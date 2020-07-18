@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     $('#next-reg-1').on('click', function () {
 
-        $('.reg-step-line').css('background-size', '66.6%');
+        $('.reg-step-line').css('background-size', '66.6% 100%');
         $('.reg-step__item:nth-child(2)').css('color', '#fff');
         $('.reg-step-1').hide();
 
@@ -44,14 +44,14 @@ $(document).ready(function () {
     });
 
     $('#next-reg-2-opt').on('click', function () {
-        $('.reg-step-line').css('background-size', '100%');
+        $('.reg-step-line').css('background-size', '100% 100%');
         $('.reg-step__item:nth-child(3)').css('color', '#fff');
         $('.reg-step-2-opt').hide();
         $('.reg-step-3-opt').show();
     });
 
     $('#next-reg-2-roz').on('click', function () {
-        $('.reg-step-line').css('background-size', '100%');
+        $('.reg-step-line').css('background-size', '100% 100%');
         $('.reg-step__item:nth-child(3)').css('color', '#fff');
         $('.reg-step-2-roz').hide();
         $('.reg-step-3-roz').show();

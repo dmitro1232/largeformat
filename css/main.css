@@ -1751,7 +1751,7 @@ button {
     background: -webkit-linear-gradient(319.96deg, #2173EF 15.6%, #C03CD6 85.6%);
     background: -o-linear-gradient(319.96deg, #2173EF 15.6%, #C03CD6 85.6%);
     background: linear-gradient(130.04deg, #2173EF 15.6%, #C03CD6 85.6%);
-    background-size: 33.3%; }
+    background-size: 33.3% 100%; }
   .reg-step__item {
     width: 33.3%;
     padding: 4px 0;
