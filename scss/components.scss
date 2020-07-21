@@ -124,6 +124,37 @@ button {
 
 
 
+.btn-04-l,
+.btn-04-m,
+.btn-04-s {
+    font-family: $opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2173EF;
+    background: #FFFFFF;
+    border: 2px solid #2173EF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    transition: all 0.4s;
+
+    &:hover {
+        border: 3px solid #2173EF;
+        box-sizing: border-box;
+    }
+}
+.btn-04-l{
+    padding: 13px 28px;
+}
+.btn-04-m{
+    padding: 10px 20px;
+}
+.btn-04-s{
+    padding: 6px 13px;
+}
 
 
 

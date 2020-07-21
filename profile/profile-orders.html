@@ -575,9 +575,6 @@
 
 
 
-
-
-
     <div class="profile-wrapper">
 
 
@@ -607,8 +604,8 @@
                         <div class="mbclos"><img src="../img/icons/prof-m-close.svg" alt=""></div>
                     </div>
                     <ul class="profile-menu__list">
-                        <li class="profile-menu__item item-active"><a href="#!">Главная</a></li>
-                        <li class="profile-menu__item"><a href="profile-orders.html">Заказы</a></li>
+                        <li class="profile-menu__item"><a href="../profile/profile.html">Главная</a></li>
+                        <li class="profile-menu__item item-active"><a href="#!">Заказы</a></li>
                         <li class="profile-menu__item"><a href="#!">Финансы</a>
                             <div class="add">3</div>
                         </li>
@@ -632,123 +629,149 @@
 
 
 
-        <div class="profile-person">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
-                        <div class="profile">
-                            <div class="profile__avatar">
-                                <img src="../img/avatar.png" alt="">
-                            </div>
-                            <div class="profile__rsc">
-                                <div class="profile__name">
-                                    <h5 class="title-05">Рабинович Изя Иосифович</h5>
-                                </div>
-                                <div class="profile__link">
-                                    <a href="#!" class="link-11">Перейти в профиль</a>
-                                </div>
+
+
+
+
+
+
+
+        <div class="allorders">
+
+            <div class="sort-line">
+                <div class="container">
+                    <div class="row alflx">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label class="str txt-4">Показать с:</label>
+                                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control"
+                                    placeholder="12.03.2020 г.">
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
-                        <div class="manager">
-                            <div class="manager__name">
-                                <p>Ваш менеджер</p>
-                                <h5 class="title-05">Сидиченко Яна</h5>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label class="str txt-4">До:</label>
+                                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control"
+                                    placeholder="12.03.2020 г.">
                             </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <button class="btn-01-s sh-result">Показать</button>
+                            <button class="btn-04-s res-result">Сбросить</button>
+                        </div>
+
+                        <div class="col-md-3 res-num">
                             <div>
-                                <button class="btn-02-s">задать вопрос</button>
+                                <label class="str txt-4">Раздел *</label>
+                                <span class="select-3">
+                                    <select class="">
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>50</option>
+                                        <option>Все</option>
+                                    </select>
+                                    <img class="fic" src="../img/icons/ar-sel.svg" alt="">
+                                </span>
+                            </div>
+
+                            <div class="sort-np">
+                                <button class="sort-prev"></button>
+                                <button class="sort-next"></button>
                             </div>
                         </div>
                     </div>
+                    <!-- row alflx -->
                 </div>
+                <!-- container -->
             </div>
-        </div>
-        <!-- profile-person -->
+            <!-- sort-line -->
 
 
 
+            <div class="list-allorder">
 
+                <div class="container">
 
-
-        <div class="p-other">
-            <div class="container">
-                <div class="row poflx">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div class="replenish">
-                            <button class="btn-01-m">пополнить счёт</button>
-                            <div class="ls">ЛС: <span>910105</span></div>
+                    <!-- <div class="table-sort">
+                        <div class="table-sort__head">
+                            <div class="cell">Номер</div>
+                            <div class="cell">Наименование</div>
+                            <div class="cell">ТЗ</div>
+                            <div class="cell">Тираж</div>
+                            <div class="cell">Стоимость</div>
+                            <div class="cell">Статус</div>
+                            <div class="cell">Заказ принят</div>
+                            <div class="cell">Заказ выполнен</div>
+                            <div class="cell">Оплата и доставка</div>
                         </div>
 
-                        <p class="text-pay">Вас перенаправит на платёжный агрегатор. Доступные способы оплаты:</p>
-
-                        <div class="methods">
-                            <a href="#!"><img src="../img/icons/visa.svg" alt=""></a>
-                            <a href="#!"><img src="../img/icons/mastercard.svg" alt=""></a>
+                        <div class="table-sort__body">
+                            <div class="cell">#5621</div>
+                            <div class="cell">Брошюра 99 х 210 мм</div>
+                            <div class="cell">...</div>
+                            <div class="cell">2 000 шт.</div>
+                            <div class="cell">4 600 ₴</div>
+                            <div class="cell">В ожидании</div>
+                            <div class="cell">20 апреля 2020 г.</div>
+                            <div class="cell">25 апреля 2020 г.</div>
+                            <div class="cell">...</div>
                         </div>
+                    </div> -->
 
-                        <div class="balance">
-                            <div class="balance__count">
-                                <p>Баланс: </p> <span>30 000 ₴</span>
-                            </div>
-                            <div class="balance__limit">
-                                <p>Лимит отг-ки: </p> <span>30 000 ₴</span>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table-sort">
+                        <thead class="table-sort__head">
+                            <tr>
+                                <th class="ct">Номер <span class="sort">▲</span></th>
+                                <th>Наименование <span class="sort">▲</span></th>
+                                <th class="ct">ТЗ</th>
+                                <th>Тираж <span class="sort">▲</span></th>
+                                <th>Стоимость <span class="sort">▲</span></th>
+                                <th>Статус <span class="sort sort-active">▲</span></th>
+                                <th>Заказ принят <span class="sort">▲</span></th>
+                                <th>Заказ выполнен <span class="sort">▲</span></th>
+                                <th class="ct">Оплата и доставка</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-sort__body">
+                            <tr>
+                                <td class="ct">#5621</td>
+                                <td>Брошюра 99 х 210 мм</td>
+                                <td class="ct"><span class="alert-ico">•••</span></td>
+                                <td>2 000 шт.</td>
+                                <td>4 600 ₴</td>
+                                <td>В ожидании</td>
+                                <td>20 апреля 2020 г.</td>
+                                <td>25 апреля 2020 г.</td>
+                                <td class="ct"><span class="alert-ico">•••</span></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
 
-
-
-                    <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12 col-12 overw">
-                        <div class="last-orders">
-                            <div class="last-orders__line">
-                                <h3 class="title-03">Последние заказы</h3>
-                                <div class="oos"><a href="#!" class="link-11">Все заказы</a></div>
-                            </div>
-                        </div>
-                        <div class="table-wrap mttb">
-                            <table class="table-1">
-
-                                <tbody class="table-1__body">
-                                    <tr>
-                                        <td>#5621</td>
-                                        <td>Брошюра 99 х 210 мм</td>
-                                        <td>2 000 шт.</td>
-                                        <td>4 600 ₴</td>
-                                        <td>Исполнен</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#5621</td>
-                                        <td>Брошюра 99 х 210 мм</td>
-                                        <td>2 000 шт.</td>
-                                        <td>4 600 ₴</td>
-                                        <td>Не исполнен</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#5621</td>
-                                        <td>Брошюра 99 х 210 мм</td>
-                                        <td>2 000 шт.</td>
-                                        <td>4 600 ₴</td>
-                                        <td>Исполнен</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#5621</td>
-                                        <td>Брошюра 99 х 210 мм</td>
-                                        <td>2 000 шт.</td>
-                                        <td>4 600 ₴</td>
-                                        <td>Исполнен</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                 </div>
+
             </div>
-            <!-- container -->
+
+
+
+
+
+
+
+
+
         </div>
-        <!-- p-other -->
+        <!-- allorders -->
+
+
+
+
+
+
+
+
+
 
 
 
@@ -759,9 +782,6 @@
 
     </div>
     <!-- profile-wrapper -->
-
-
-
 
 
 

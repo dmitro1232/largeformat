@@ -14,3 +14,10 @@ $('.mbclos').click(function () {
     $('.profile-menu').removeClass('profile-menu-mobactive');
     $('.shadw').removeClass('shadw-active');
 });
+
+
+
+$('thead tr .sort').click(function () {
+    $(this).toggleClass('sort-active');
+    // $('.shadw').removeClass('shadw-active');
+});

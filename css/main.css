@@ -122,6 +122,41 @@ button {
 .btn-03-s {
   padding: 8px 15px; }
 
+.btn-04-l,
+.btn-04-m,
+.btn-04-s {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2173EF;
+  background: #FFFFFF;
+  border: 2px solid #2173EF;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .btn-04-l:hover,
+  .btn-04-m:hover,
+  .btn-04-s:hover {
+    border: 3px solid #2173EF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.btn-04-l {
+  padding: 13px 28px; }
+
+.btn-04-m {
+  padding: 10px 20px; }
+
+.btn-04-s {
+  padding: 6px 13px; }
+
 .link-11 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
