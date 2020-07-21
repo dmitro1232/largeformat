@@ -60,15 +60,18 @@
 }
 
 
+.mob-sl-nav-tpl {
+    display: none;
+}
 
 
 
 .layout {
-    
+
     border-bottom: 1px solid #E8E8E8;
     margin-bottom: 40px;
 
-    &:last-child{
+    &:last-child {
         border-bottom: none;
     }
 
@@ -85,12 +88,14 @@
         background: none;
         cursor: pointer;
     }
-    .layout__stat-active{
+
+    .layout__stat-active {
         color: #2E2E2E !important;
         font-weight: bold !important;
         border-bottom: none;
         position: relative;
-        &:before{
+
+        &:before {
             content: '';
             display: block;
             position: absolute;
@@ -204,13 +209,67 @@
 }
 
 
-@media screen and (max-width: 600px){
-    .mod-t{
-        h4{
+// слайдер 
+
+
+
+.ug-gallery-wrapper .ug-strip-panel {
+    background-color: transparent !important;
+}
+
+.ug-thumbs-strip {}
+
+.ug-panel-handle-tip,
+.ug-zoompanel {
+    display: none !important;
+}
+
+.ug-item-wrapper:after {
+    width: 45px;
+    height: 100%;
+    content: '';
+    /*	display: block;
+	position: absolute;*/
+    z-index: 20;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity .2s ease-in-out;
+}
+
+.ug-slider-wrapper:after {
+    width: 45px;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity .2s ease-in-out;
+}
+
+.ug-button-fullscreen,
+.ug-arrow-left,
+.ug-arrow-right {
+    z-index: 10 !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .mod-t {
+        h4 {
             font-size: 20px;
             display: block;
             margin: 0 20px !important;
         }
+
         .close {
             position: absolute;
             right: 15px !important;
@@ -222,56 +281,7 @@
 
 
 
-// слайдер 
-
-
-
-.ug-gallery-wrapper .ug-strip-panel{
-	background-color: transparent!important;
-}
-.ug-thumbs-strip{
-
-}
-
- .ug-panel-handle-tip, .ug-zoompanel{
-	display: none!important;
-}
-.ug-item-wrapper:after{
-	width: 45px;
-	height: 100%;
-	content: '';
-/*	display: block;
-	position: absolute;*/
-	z-index: 20;
-	right: 0;
-	top: 0;
-	background: rgba(0, 0, 0, 0.2);
-	transition: opacity .2s ease-in-out;
-}
-
-.ug-slider-wrapper:after{
-	width: 45px;
-	height: 100%;
-	content: '';
-	display: block;
-	position: absolute;
-	z-index: 1;
-	right: 0;
-	top: 0;
-	background: rgba(0, 0, 0, 0.2);
-	transition: opacity .2s ease-in-out;
-}
-.ug-button-fullscreen, .ug-arrow-left, .ug-arrow-right{
-	z-index: 10!important;
-}
-
-
-
-
-/*Конец комментирования*/
-
 @media only screen and (max-width : 768px) {
-    /*Product new CSS*/
 
     .modal-body {
         padding-left: 0;
@@ -307,6 +317,7 @@
         height: 25px !important;
         transform: rotate(0) !important;
     }
+
     .ug-slider-wrapper::after {
         width: 100% !important;
         height: 45px !important;
@@ -327,4 +338,58 @@
         padding-right: 0 !important;
     }
 
+}
+
+
+@media only screen and (max-width : 500px) {
+    // адаптив для слайдера в котором будут слайдеры 
+
+    .mob-sl-nav-tpl {
+        display: flex;
+        font-family: $montAlt;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        color: #2E2E2E;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: space-around;
+
+        .num-slides {
+            color: #C3D9F9;
+            margin-left: 5px;
+        }
+
+        .sins-left,
+        .sins-right {
+            background-color: #C3D9F9;
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                mask-image: url(/img/icons/ar_l_g.svg);
+                mask-repeat: no-repeat;
+                background-color: #fff;
+                display: block;
+                width: 12px;
+                height: 18px;
+            }
+
+            &:focus,
+            &:active {
+                background-color: #2173EF;
+            }
+        }
+
+        .sins-right {
+            transform: rotate(180deg);
+        }
+    }
+
+    // END адаптив для слайдера в котором будут слайдеры 
 }
