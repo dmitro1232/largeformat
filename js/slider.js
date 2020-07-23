@@ -2,7 +2,6 @@ $(document).ready(function () {
 
 
 
-
     // слайдер со слайдерами 
 
 
@@ -22,17 +21,15 @@ $(document).ready(function () {
                     infinite: false,
                     prevArrow: $('.sins-left'),
                     nextArrow: $('.sins-right'),
+                    swipe: false
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
     $(".scrl").on('afterChange', function (event, slick, currentSlide) {
         $("#cp").text(currentSlide + 1);
     });
-    var texts = document.querySelectorAll(".scrl .idslide"),
+    var texts = document.querySelectorAll(".layout__body"),
         suball = texts.length;
     $('.num-slides').append(suball);
 
@@ -40,6 +37,7 @@ $(document).ready(function () {
 
 
     // END слайдер со слайдерами 
+    
 
 
 
@@ -432,8 +430,6 @@ $(document).ready(function () {
 
 
     };
-
-
 
 
 

@@ -4192,6 +4192,13 @@ button {
     padding-right: 0 !important; } }
 
 @media only screen and (max-width: 500px) {
+  .scrl {
+    overflow: hidden;
+    padding-right: 0; }
+  .layout {
+    max-width: 100%; }
+  .product_containter {
+    padding-left: 0 !important; }
   .mob-sl-nav-tpl {
     display: -webkit-box;
     display: -ms-flexbox;
