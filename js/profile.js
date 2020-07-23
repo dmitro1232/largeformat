@@ -17,7 +17,7 @@ $('.mbclos').click(function () {
 
 
 
-$('thead tr .sort').click(function () {
+$('thead tr th .sort').click(function () {
     $(this).toggleClass('sort-active');
     // $('.shadw').removeClass('shadw-active');
 });

@@ -1,46 +1,42 @@
 $(document).ready(function () {
 
 
-
-
     // слайдер со слайдерами 
-
-
-
-    $( '.modal' ).on( 'shown.bs.modal', function() {
+    $('.modal').on('shown.bs.modal', function () {
         $('.scrl').slick({
+            settings: "unslick",
+            responsive: [{
+                    breakpoint: 5024,
                     settings: "unslick",
-                    responsive: [{
-                            breakpoint: 5024,
-                            settings: "unslick",
-                        },
-                        {
-                            breakpoint: 500,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                autoplay: false,
-                                infinite: false,
-                                prevArrow: $('.sins-left'),
-                                nextArrow: $('.sins-right'),
-                                swipe: false
-                            }
-                        }
-                    ]
-                });
-                $(".slider").slick('reinit');
-                $(".scrl").on('afterChange', function (event, slick, currentSlide) {
-                    $("#cp").text(currentSlide + 1);
-                });
-                var texts = document.querySelectorAll(".layout__body"),
-                    suball = texts.length;
-                $('.num-slides').append(suball);
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: false,
+                        infinite: false,
+                        prevArrow: $('.sins-left'),
+                        nextArrow: $('.sins-right'),
+                        swipe: false
+                    }
+                }
+            ]
+        });
+        $(".slider").slick('reinit');
+        $(".scrl").on('afterChange', function (event, slick, currentSlide) {
+            $("#cp").text(currentSlide + 1);
+        });
+        var texts = document.querySelectorAll(".layout__body"),
+            suball = texts.length;
+        $('.num-slides').append(suball);
     });
-
-
-
     // END слайдер со слайдерами 
 
+
+
+
+    
 
     var windowsize = $(window).width();
 
@@ -431,8 +427,5 @@ $(document).ready(function () {
     };
 
 
+
 });
-
-
-
-

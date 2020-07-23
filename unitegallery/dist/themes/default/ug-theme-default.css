@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 
 .ug-gallery-wrapper .ug-theme-panel{
@@ -152,4 +159,3 @@
 .ug-default-button-hidepanel.ug-button-hidden-mode.ug-button-hover .ug-default-button-hidepanel-tip{
 	background-position: 0px -21px;
 }
-
