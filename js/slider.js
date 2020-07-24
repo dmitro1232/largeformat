@@ -96,7 +96,7 @@ $(document).ready(function () {
             slider_fullscreen_button_align_vert: "top", //top, middle, bottom - fullscreen button vertical align
             slider_fullscreen_button_offset_hor: 10, //fullscreen button horizontal offset 
             slider_fullscreen_button_offset_vert: 20, //fullscreen button vertical offset
-
+              slider_enable_play_button: false, //true,false - enable play / pause button onslider element
             slider_enable_zoom_panel: true, //true,false - enable the zoom buttons, works together with zoom control.
             slider_zoompanel_skin: "", //skin of the slider zoom panel, if empty inherit from gallery skin    
             slider_zoompanel_align_hor: "right", //left, center, right - zoom panel horizontal align
@@ -181,7 +181,7 @@ $(document).ready(function () {
             slider_fullscreen_button_align_vert: "top", //top, middle, bottom - fullscreen button vertical align
             slider_fullscreen_button_offset_hor: 10, //fullscreen button horizontal offset 
             slider_fullscreen_button_offset_vert: 20, //fullscreen button vertical offset
-
+            slider_enable_play_button: false, //true,false - enable play / pause button onslider element
             slider_enable_zoom_panel: true, //true,false - enable the zoom buttons, works together with zoom control.
             slider_zoompanel_skin: "", //skin of the slider zoom panel, if empty inherit from gallery skin    
             slider_zoompanel_align_hor: "right", //left, center, right - zoom panel horizontal align
@@ -216,7 +216,35 @@ $(document).ready(function () {
         // Конец Слайдер2 для мобильной версии
         // Конец Слайдер2 для мобильной версии
 
+           // function isIOSDevice(){
+           //   return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+           //  }
+           //  if(isIOSDevice()){
+           //      console.log("I am an IOS device!");
+           //  } else {
+           //      console.log(" DEVICE WINDOWS");
+           //  }
 
+            // function isIOSDevice(){
+            //  return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+            // }
+            // if(!isIOSDevice()){
+            //     console.log(" DEVICE WINDOWS!");
+            //     // $('.ug-button-fullscreen').css('visibility', 'hidden') ;
+            //     // // $('.mod-t').addClass('importantRule') ;
+            //     // $('.mod-t').css('visibility', 'hidden') ;
+            //     // $('.ug-button-fullscreen').addClass('importantRule') ;
+               
+            //     setTimeout(function(){
+            //      $('.ug-button-fullscreen').css('visibility', 'hidden') ;
+            //     // $('.mod-t').addClass('importantRule') ;
+            //      $('.mod-t').css('visibility', 'hidden') ;
+            //      $('.ug-button-fullscreen').addClass('importantRule') ;
+            //     }, 3000);
+              
+            // } else {
+            //     console.log("I am an IOS device ");
+            // }
 
 
 

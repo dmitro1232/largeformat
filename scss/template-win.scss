@@ -257,7 +257,11 @@
 }
 
 
-
+.importantRule {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+}
 
 
 
@@ -341,17 +345,21 @@
 }
 
 @media only screen and (max-width : 500px) {
+
     // адаптив для слайдера в котором будут слайдеры 
     .scrl {
         overflow: hidden;
         padding-right: 0;
     }
-    .layout{
-        max-width: 100%;    
+
+    .layout {
+        max-width: 100%;
     }
-    .product_containter{
+
+    .product_containter {
         padding-left: 0 !important;
     }
+
     .mob-sl-nav-tpl {
         display: flex;
         font-family: $montAlt;

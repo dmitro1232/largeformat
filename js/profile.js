@@ -17,7 +17,17 @@ $('.mbclos').click(function () {
 
 
 
-$('thead tr th .sort').click(function () {
+$('.table-sort__head tr th').click(function () {
     $(this).toggleClass('sort-active');
-    // $('.shadw').removeClass('shadw-active');
 });
+
+$('.alert-ico').click(function () {
+    $('.alert-ico').removeClass('alert-ico-active');
+});
+
+$('.alert-ico').click(function () {
+    $(this).toggleClass('alert-ico-active');
+    $('.alert-1').show();
+});
+
+

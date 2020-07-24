@@ -4132,6 +4132,11 @@ button {
 .ug-arrow-right {
   z-index: 10 !important; }
 
+.importantRule {
+  display: none !important;
+  visibility: hidden;
+  opacity: 0; }
+
 @media screen and (max-width: 600px) {
   .mod-t h4 {
     font-size: 20px;
