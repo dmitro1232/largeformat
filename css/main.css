@@ -1648,6 +1648,10 @@ button {
     right: 0;
     max-height: 390px; }
 
+.mo-con-reg {
+  max-width: 480px !important;
+  margin: 0 auto; }
+
 .reg-log-header {
   border-bottom: 1px solid #C3D9F9;
   padding: 40px !important; }
