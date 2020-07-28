@@ -504,7 +504,7 @@ button {
     .sort-line .form-group input {
       padding-top: 24px;
       padding-bottom: 24px;
-      padding-right: 10px;
+      padding-right: 7px;
       padding-left: 10px;
       font-family: "Open Sans", sans-serif;
       font-style: normal;
@@ -576,10 +576,10 @@ button {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 20px;
-    -ms-grid-columns: minmax(-webkit-max-content, 75px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
-    -ms-grid-columns: minmax(max-content, 75px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
-    grid-template-columns: minmax(-webkit-max-content, 75px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
-    grid-template-columns: minmax(max-content, 75px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px); }
+    -ms-grid-columns: minmax(-webkit-max-content, 85px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
+    -ms-grid-columns: minmax(max-content, 85px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
+    grid-template-columns: minmax(-webkit-max-content, 85px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
+    grid-template-columns: minmax(max-content, 85px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px); }
     .table-sort__head tr th {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
@@ -594,10 +594,10 @@ button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-grid-columns: minmax(-webkit-max-content, 75px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
-    -ms-grid-columns: minmax(max-content, 75px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
-    grid-template-columns: minmax(-webkit-max-content, 75px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
-    grid-template-columns: minmax(max-content, 75px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
+    -ms-grid-columns: minmax(-webkit-max-content, 85px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
+    -ms-grid-columns: minmax(max-content, 85px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
+    grid-template-columns: minmax(-webkit-max-content, 85px) minmax(-webkit-max-content, 190px) minmax(-webkit-max-content, 60px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 100px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 150px) minmax(-webkit-max-content, 140px);
+    grid-template-columns: minmax(max-content, 85px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
     padding: 20px 0;
     border-bottom: 1px solid #E8E8E8; }
     .table-sort__body tr:hover {
@@ -645,12 +645,8 @@ button {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.tr-active {
-  background: #F9F9F9 !important;
-  border-bottom: none !important; }
-
 .alert-1 {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 2;
   background: #FFFFFF;
@@ -715,6 +711,9 @@ button {
       transform: rotate(45deg);
       border-bottom: 3px solid #fff; }
 
+.alert-2 {
+  right: 0; }
+
 .alert-docs {
   background: #F9F9F9;
   border-radius: 4px;
@@ -725,8 +724,28 @@ button {
   .alert-docs a {
     display: inline-block; }
 
-.alert-2 {
-  right: 0; }
+.create-invoice {
+  margin-top: 80px; }
+
+@media screen and (max-width: 1000px) {
+  .ovsdfz {
+    overflow-y: scroll;
+    overflow-x: unset !important;
+    position: relative;
+    min-height: 100%; }
+  .table-sort {
+    min-width: 1140px; }
+  .list-allorder {
+    position: relative; }
+  .alert-1 {
+    position: absolute !important;
+    z-index: 1000000; } }
+
+@media screen and (max-width: 992px) {
+  .btnsortsec {
+    margin-top: 40px !important; }
+  .res-num {
+    margin-top: 40px; } }
 
 @media (max-width: 950px) {
   .table-wrap {

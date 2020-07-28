@@ -369,7 +369,7 @@
         input {
             padding-top: 24px;
             padding-bottom: 24px;
-            padding-right: 10px;
+            padding-right: 7px;
             padding-left: 10px;
             font-family: $opensans;
             font-style: normal;
@@ -437,7 +437,10 @@
 }
 
 
-
+// .ovsdfz{
+//     min-width: 1000px !important;
+//     overflow-x: scroll !important;
+// }
 
 .table-sort {
     min-width: 100%;
@@ -448,7 +451,7 @@
             justify-content: space-between;
             margin-bottom: 20px;
             grid-template-columns:
-                minmax(max-content, 75px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
+                minmax(max-content, 85px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
 
             th {
                 font-family: $opensans;
@@ -467,7 +470,7 @@
             display: grid;
             justify-content: space-between;
             grid-template-columns:
-                minmax(max-content, 75px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
+                minmax(max-content, 85px) minmax(max-content, 190px) minmax(max-content, 60px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 100px) minmax(max-content, 150px) minmax(max-content, 150px) minmax(max-content, 140px);
             padding: 20px 0;
             border-bottom: 1px solid #E8E8E8;
 
@@ -493,6 +496,7 @@
     position: relative;
 }
 
+// alert icon
 .alert-ico {
     border: 1px solid #C3D9F9;
     border-radius: 50px;
@@ -503,13 +507,14 @@
     color: #C3D9F9;
     cursor: pointer;
 }
-
 .alert-ico-active {
     background: #2173EF;
     color: #fff;
     border: 1px solid #2173EF;
 }
+// END alert icon
 
+// sort
 .sort {
     font-size: 10px;
     position: absolute;
@@ -517,21 +522,21 @@
     color: #C3D9F9;
     transition: 0.3s;
 }
-
 .sort-active {
     span {
         color: #2173EF;
         transform: rotate(180deg);
     }
 }
+// END sort
 
-.tr-active {
-    background: #F9F9F9 !important;
-    border-bottom: none !important;
-}
+// .tr-active {
+//     background: #F9F9F9 !important;
+//     border-bottom: none !important;
+// }
 
 .alert-1 {
-    display: block;
+    display: none;
     position: absolute;
     z-index: 2;
     background: #FFFFFF;
@@ -593,6 +598,9 @@
 }
 
 
+.alert-2{
+    right: 0;
+}
 
 
 .alert-docs{
@@ -609,6 +617,44 @@
     }
 }
 
-.alert-2{
-    right: 0;
+
+
+.create-invoice{
+    margin-top: 80px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .ovsdfz{
+        overflow-y: scroll;
+        overflow-x: unset !important;
+        position: relative;
+        min-height: 100%;
+    }
+    .table-sort{
+        min-width: 1140px;
+    }
+    .list-allorder{
+        position: relative;
+    }
+    .alert-1{
+        position: absolute !important;
+        z-index: 1000000;
+    }
+}
+@media screen and (max-width: 992px){
+    .btnsortsec{
+        margin-top: 40px !important;
+    }
+    .res-num{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
 }

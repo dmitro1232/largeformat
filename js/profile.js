@@ -21,13 +21,18 @@ $('.table-sort__head tr th').click(function () {
     $(this).toggleClass('sort-active');
 });
 
+
+
+// модалка, с инфой о заказе 
+
 $('.alert-ico').click(function () {
     $('.alert-ico').removeClass('alert-ico-active');
-});
-
-$('.alert-ico').click(function () {
     $(this).toggleClass('alert-ico-active');
-    $('.alert-1').show();
+    $('.alert-1').hide();
+    $(this).next().show();
 });
-
+$('.alert-1__close').click(function(){
+    $('.alert-ico-active').next().hide();
+    $('.alert-ico').removeClass('alert-ico-active');
+});
 
