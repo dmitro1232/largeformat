@@ -540,6 +540,13 @@ button {
       padding: 14px 20px;
       margin: 0;
       width: 95px; }
+  .sort-line .btnsortsec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .sort-np {
   display: -webkit-box;
@@ -941,6 +948,165 @@ button {
           max-width: 130px; }
         .table-ref__body tr td:last-child {
           text-align: center; } }
+
+.finance-wrap {
+  margin-top: 80px; }
+
+@media screen and (max-width: 767px) {
+  .finance-title {
+    margin-top: 80px; } }
+
+.doc__wrp {
+  border: 1px solid #E8E8E8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px 10px 20px 20px;
+  margin: 20px 0; }
+
+.doc__list {
+  max-height: 240px;
+  overflow-y: scroll;
+  margin: 0; }
+  .doc__list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F9F9F9; }
+  .doc__list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F9F9F9; }
+  .doc__list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E8E8E8; }
+  .doc__list li {
+    margin-bottom: 10px; }
+    .doc__list li a {
+      padding-left: 40px;
+      display: block;
+      height: 40px; }
+    .doc__list li .pdf {
+      background-image: url(/img/icons/pdf1.svg); }
+    .doc__list li .xls {
+      background-image: url(/img/icons/xls1.svg); }
+    .doc__list li .doc {
+      background-image: url(/img/icons/doc1.svg); }
+
+.st-up {
+  background-image: url(/img/icons/st-up.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 15px;
+  height: 15px;
+  width: 10px; }
+
+.st-down {
+  background-image: url(/img/icons/st-down.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 15px; }
+
+.prfbs .sh-result {
+  margin-right: 5px; }
+
+.fin-stb .sort-next {
+  margin-left: 10px; }
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 100%;
+  padding: 40px 30px 0px 30px; }
+  .rwd-table tr {
+    border-bottom: 1px solid #E8E8E8; }
+    .rwd-table tr:first-child {
+      border-bottom: none; }
+    .rwd-table tr:last-child {
+      border-bottom: none; }
+  .rwd-table th {
+    display: none; }
+  .rwd-table td {
+    display: block; }
+    .rwd-table td:first-child {
+      padding-top: 0.5em; }
+    .rwd-table td:last-child {
+      padding-bottom: 0.5em; }
+    .rwd-table td:before {
+      content: attr(data-th) ": ";
+      font-weight: bold;
+      width: 6.5em;
+      display: inline-block; }
+      @media (min-width: 480px) {
+        .rwd-table td:before {
+          display: none; } }
+  .rwd-table th,
+  .rwd-table td {
+    text-align: left;
+    min-width: 100%; }
+    @media (min-width: 480px) {
+      .rwd-table th,
+      .rwd-table td {
+        display: table-cell;
+        padding: 0.25em 0.5em; }
+        .rwd-table th:first-child,
+        .rwd-table td:first-child {
+          padding-left: 0; }
+        .rwd-table th:last-child,
+        .rwd-table td:last-child {
+          padding-right: 0; } }
+
+.rwd-table {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2E2E2E;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #E8E8E8 !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 80px; }
+  @media (max-width: 480px) {
+    .rwd-table {
+      padding: 20px 10px 0px 10px; } }
+  .rwd-table tr:first-child {
+    border-top: none;
+    cursor: pointer; }
+  .rwd-table tr td:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rwd-table tr td:nth-child(2):before {
+      padding-right: 20px; }
+  .rwd-table tr td:last-child {
+    color: #B4B4B4; }
+  .rwd-table th,
+  .rwd-table td {
+    margin: 1.5em 0em; }
+    .rwd-table th:nth-child(1),
+    .rwd-table td:nth-child(1) {
+      width: 20.5%; }
+    .rwd-table th:nth-child(2),
+    .rwd-table td:nth-child(2) {
+      width: 65%; }
+    .rwd-table th:nth-child(3),
+    .rwd-table td:nth-child(3) {
+      width: 40%; }
+    @media (min-width: 480px) {
+      .rwd-table th,
+      .rwd-table td {
+        padding: 1.3em 0 !important; } }
+  .rwd-table th,
+  .rwd-table td:before {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #B4B4B4; }
+
+.ord-l {
+  margin-left: 5px; }
 
 @media (max-width: 950px) {
   .table-wrap {

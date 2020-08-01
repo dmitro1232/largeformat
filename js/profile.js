@@ -17,11 +17,13 @@ $('.mbclos').click(function () {
 
 
 
-$('table thead tr th').click(function () {
+$('.table-sort__head tr th').click(function () {
     $(this).toggleClass('sort-active');
 });
 
-
+$('.rwd-table tr th').click(function () {
+    $(this).toggleClass('sort-active');
+});
 
 // модалка, с инфой о заказе 
 
