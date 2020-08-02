@@ -4,8 +4,6 @@ $('.profile-menu__item').click(function () {
 });
 
 
-
-
 $('.lk-mob-btn').click(function () {
     $('.profile-menu').toggleClass('profile-menu-mobactive');
     $('.shadw').toggleClass('shadw-active');
@@ -41,11 +39,7 @@ $('.alert-1__close').click(function () {
     $('.alert-ico').removeClass('alert-ico-active');
 });
 
-// $('.showmob-tabme').click(function () {
-//     $('.mob-table').css('display', 'flex');
-//     $('.mob-table').hide();
-//     $(this).next().show();
-// });
+
 var windowsize = $(window).width();
 $(window).resize(function () {
     var windowsize = $(window).width();
@@ -67,3 +61,5 @@ $('#styled-checkbox-4').on('click', function () {
         $('.fr-hd').removeClass('fr-hd-active');
     }
 })
+
+
