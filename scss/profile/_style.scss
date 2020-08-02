@@ -1130,23 +1130,12 @@ $breakpoint-alpha: 480px;
 }
 
 
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600&display=swap');
-		 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
 .main-container{
-    max-width: 1170px;
-    margin: 0 auto;
     text-align: center;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
 }
 .inner-content{
@@ -1168,9 +1157,6 @@ $breakpoint-alpha: 480px;
     direction: rtl;
 }
 
-
-
-
 .prof-feedback{
     &__text{
         min-width: 100%;
@@ -1181,3 +1167,5 @@ $breakpoint-alpha: 480px;
         float: right;
     }
 }
+
+
