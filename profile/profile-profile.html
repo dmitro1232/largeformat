@@ -243,7 +243,7 @@
 
 
 
-        <!-- Modal -->
+        <!-- login -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -604,7 +604,7 @@
 
 
                 <div class="mob-cr-page">
-                    <h2 class="title-02">Партнёрка</h2>
+                    <h2 class="title-02">Профиль</h2>
                 </div>
 
 
@@ -619,9 +619,9 @@
                         <li class="profile-menu__item"><a href="#!">Финансы</a>
                             <div class="add">3</div>
                         </li>
-                        <li class="profile-menu__item item-active"><a href="#!">Партнёрка</a></li>
+                        <li class="profile-menu__item"><a href="#!">Партнёрка</a></li>
                         <li class="profile-menu__item"><a href="#!">Отзывы</a></li>
-                        <li class="profile-menu__item"><a href="#!">Профиль</a></li>
+                        <li class="profile-menu__item item-active"><a href="#!">Профиль</a></li>
                     </ul>
 
                     <ul class="profile-menu__helpsec">
@@ -643,135 +643,228 @@
 
 
 
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-9 getsec">
+
+                </div>
+            </div>
+        </div> -->
 
 
-
-
-
-
-
-
-        <div class="partnerka">
+        <div class="profile-wrap">
 
             <div class="container">
-                <div class="row flx-ref">
 
-                    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
-                        <div class="percent">
-                            <div class="percent__sec">
-                                <div class="percent__num">5%</div>
-                                <p class="text-03">получайте с каждого <br> заказа реферала</p>
-                            </div>
-                            <div class="percent__sec">
-                                <div class="percent__num">10%</div>
-                                <p class="text-03">скидку получит <br> реферал</p>
-                            </div>
+                <div class="row poflx">
+
+
+
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
+
+                        <div class="prof-nav">
+                            <ul class="prof-nav__list">
+                                <li class="prof-nav__item " id="mt1">
+                                    <a class="prof-nav__link" href="#v">Учётные данные</a>
+                                    <div class="mts mt1"></div>
+                                </li>
+
+                                <!-- блоки выведены в mt1,mt2,mt3,mt4 с помощью JS в файле profile.js -->
+
+                                <li class="prof-nav__item" id="mt2">
+                                    <a class="prof-nav__link" href="#mt2">Контакты</a>
+                                    <div class="mts mt2"></div>
+                                </li>
+
+
+                                <li class="prof-nav__item " id="mt3">
+                                    <a class="prof-nav__link" href="#mt3">Оплата и доставка</a>
+                                    <div class="mts mt3"></div>
+                                </li>
+
+
+                                <li class="prof-nav__item " id="mt4">
+                                    <a class="prof-nav__link" href="#mt4">Настройка уведомлений</a>
+                                    <div class="mts mt4"></div>
+                                </li>
+
+
+                            </ul>
                         </div>
+                        <!-- prof-nav -->
 
-                        <div class="about-referal">
-                            <h3 class="title-03">Реферальная программа</h3>
-                            <p class="text-02">На нашем сайте работает система вознаграждения за приглашение в магазин
-                                новых друзей. Заключается эта система в том, что пригласив новых друзей, можно получать
-                                бонусы за каждый их заказ.</p>
-
-                            <h3 class="title-03">Как сделать приглашение</h3>
-                            <p class="text-02">Чтобы сделать приглашение можно использовать один из двух способов:</p>
-                        </div>
-                        <!-- percent -->
                     </div>
 
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="generate-ref">
-                            <div class="copy-link">
-                                <p class="text-03">1. Скопировать реферальную ссылку в личном кабинете и отправить ее
-                                    тому, кого Вы хотите пригласить. Далее нужно, чтобы этот человек перешел по Вашей
-                                    ссылке в магазин и зарегистрировался.</p>
 
-                                <h4 class="title-04 lbl">Ваша реферальная ссылка</h4>
-                                <form action="" class="ref-form">
-                                    <input type="text" class="input-1" value="http://site.ua/?partner_id=kkjNUh">
-                                    <p><button class="btn-01-m">Скопировать</button></p>
-                                </form>
+
+
+
+
+
+
+                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-12">
+
+                        <div class="tab-content profile-data">
+                            <div class="tb-fl-fir">
+                                <div class="profile-data__left">
+                                    <div class="upld avatar">
+                                        <h4 class="txt-5">Ваш аватар</h4>
+                                        <div class="upld__wrp">
+                                            <div class="upld__img" style="background-image: url(../img/upl.png);">
+                                                <div class="upld__img-remove">
+                                                    <img src="../img/icons/trash.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="upld__right">
+                                                <p>Допустимые форматы: <span class="str">JPG, GIF, PNG</span></p>
+                                                <p>Максимальный размер: <span class="str">5 Мб</span></p>
+                                                <button class="btn-2">Загрузить изображение</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-data__ch-pass">
+                                        <div>
+                                            <h4 class="txt-5">Пароль *</h4>
+                                            <input type="password" class="input-1" placeholder="*********" required>
+                                        </div>
+                                        <div>
+                                            <h4 class="txt-5">Повторите пароль *</h4>
+                                            <input type="password" class="input-1" placeholder="*********" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-data__right">
+                                    <div>
+                                        <h4 class="txt-5">Фамилия *</h4>
+                                        <input type="text" class="input-1" required value="Рабинович">
+                                    </div>
+                                    <div>
+                                        <h4 class="txt-5">Имя *</h4>
+                                        <input type="text" class="input-1" required value="Изя">
+                                    </div>
+                                    <div>
+                                        <h4 class="txt-5">Отчество </h4>
+                                        <input type="text" class="input-1" value="Иосифович">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="generate-code">
-                                <p class="text-03">
-                                    2. Вы можете попросить того, кого Вы приглашаете, заполнить в форме регистрации поле
-                                    «Промокод». Для этого нажмите «Создать код» и поделитесь промокодом с другом.
+
+
+                            <button class="save-ch btn-01-m">Сохранить</button>
+
+                        </div>
+                        <!-- profile-data -->
+                        <!-- profile-data -->
+                        <!-- profile-data -->
+                        <!-- profile-data -->
+
+
+
+                        <div class="tab-content profile-data-contact">
+                            <div>
+                                <div class="plin">
+                                    <h4 class="txt-5">E-mail *</h4>
+                                    <p>Подтверждено</p>
+                                </div>
+                                <input type="text" class="input-1" required value="user@server.com">
+                            </div>
+                            <div>
+                                <h4 class="txt-5">Телефон * </h4>
+                                <input type="text" class="input-1 inf" value="+38 067 332 20 21">
+                            </div>
+                            <div class="verf">
+                                <div><button class="btn-04-s">подтвердить</button></div>
+                                <div class="s-line__ip fsa code">
+                                    <p class="input-1 code__form"><input class="" type="text"> </p>
+                                    <p class="tpfr">Введите код из СМС</p>
+                                </div>
+                            </div>
+
+                            <button class="save-ch btn-01-m">Сохранить</button>
+
+                        </div>
+                        <!-- profile-data-contact -->
+                        <!-- profile-data-contact -->
+                        <!-- profile-data-contact -->
+                        <!-- profile-data-contact -->
+
+
+
+                        <div class="tab-content pay-address">
+                            <div class="pay-address__pay">
+                                <h4 class="txt-4 str">Оплата *</h4>
+                                <select class="custselect pay-address__card" name="" id="">
+
+                                    <option value="">Оплата на карту VISA 0000 0000 0000 0000</option>
+                                    <option value="">Оплата на карту VISA 3454 0000 0000 0000</option>
+                                    <option value="">Оплата на карту VISA 6537 0000 0000 0000</option>
+                                    <option value="">Оплата на карту VISA 1245 0000 0000 0000</option>
+                                </select>
+                                <p class="text-04">Наиболее удобный для Вас способ оплаты, который будет использоваться
+                                    по-умолчанию.</p>
+                            </div>
+                            <div class="pay-address__address">
+                                <h4 class="txt-4 str">Оплата *</h4>
+                                <textarea class="textarea-1" name="" id="">Киев, ул. Крещатик, 14</textarea>
+                                <p class="text-04">Данный адрес будет использоваться по-умолчанию при оформлении
+                                    доставки.</p>
+                            </div>
+                            <button class="save-ch btn-01-m">Сохранить</button>
+                        </div>
+                        <!-- pay-address -->
+                        <!-- pay-address -->
+                        <!-- pay-address -->
+                        <!-- pay-address -->
+
+
+                        <div class="tab-content profile-set-notifi">
+                            <h4 class="str txt-4 profile-set-notifi__title">Уведомления отправляются на Ваш E-mail.</h4>
+                            <form action="">
+                                <p class="chbx">
+                                    <input class="styled-checkbox" id="notofi1" name="val1" type="checkbox"
+                                        value="value4">
+                                    <label for="notofi1">О новых заказах</label>
                                 </p>
-                                <h4 class="title-04 lbl">Промокод для программы</h4>
-                                <form action="" class="ref-form">
-                                    <input type="text" class="input-1" value="kkjNUh88sgOI">
-                                    <p><button class="btn-01-m">Создать код</button></p>
-                                </form>
-                            </div>
+                                <p class="chbx">
+                                    <input class="styled-checkbox" id="notofi2" name="val2" type="checkbox"
+                                        value="value4">
+                                    <label for="notofi2">Об изменении статуса заказов</label>
+                                </p>
+                                <p class="chbx">
+                                    <input class="styled-checkbox" id="notofi3" name="val3" type="checkbox"
+                                        value="value4" checked>
+                                    <label for="notofi3">Об оплате</label>
+                                </p>
+                                <p class="chbx">
+                                    <input class="styled-checkbox" id="notofi4" name="val4" type="checkbox"
+                                        value="value4">
+                                    <label for="notofi4">Информационная рассылка</label>
+                                </p>
+                            </form>
+                            <button class="save-ch btn-01-m">Сохранить</button>
                         </div>
-                        <!-- generate-ref -->
+                        <!-- profile-set-notifi -->
+                        <!-- profile-set-notifi -->
+                        <!-- profile-set-notifi -->
+                        <!-- profile-set-notifi -->
+
                     </div>
+
+
+
+
 
                 </div>
                 <!-- row -->
-            </div>
-            <!-- container -->
-
-            <div class="container">
-
-                <div class="head-title-ref">
-                    <h2 class="title-02">Ваши рефералы</h2>
-                    <div class="sort-np">
-                        <button class="sort-prev"></button>
-                        <button class="sort-next"></button>
-                    </div>
-                </div>
-
-
-                <table class="table-ref">
-                    <thead class="table-ref__head">
-                        <tr>
-                            <th>Пользователь <span class="sort">▲</span></th>
-                            <th>Регистрация <span class="sort">▲</span></th>
-                            <th>Заказов <span class="sort">▲</span></th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-ref__body">
-                        <tr>
-                            <td><p>Степаненко Владимир Александрович</p></td>
-                            <td>24 апреля 2020 г.</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><p>ТОО «Рога и копыта»</p></td>
-                            <td>24 апреля 2020 г.</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td><p>Иванько Петр Иванович</p></td>
-                            <td>24 апреля 2020 г.</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td><p>Степаненко Владимир Александрович</p></td>
-                            <td>24 апреля 2020 г.</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td><p>ТОО «Рога и копыта»</p></td>
-                            <td>24 апреля 2020 г.</td>
-                            <td>2</td>
-                        </tr>
-                    </tbody>
-                </table>
 
             </div>
             <!-- container -->
 
         </div>
-        <!-- partnerka -->
-
-
-
-
-
-
+        <!-- finance-wrap -->
 
 
 

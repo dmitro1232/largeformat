@@ -63,3 +63,56 @@ $('#styled-checkbox-4').on('click', function () {
 })
 
 
+$('.prof-nav__item').click(function () {
+    $('.prof-nav__item').removeClass('li-active');
+    $(this).toggleClass('li-active');
+});
+
+let btnBox = document.querySelector('.prof-nav__list'),
+    btn = document.querySelectorAll('.prof-nav__link'),
+    tabContent = document.querySelectorAll('.tab-content');
+
+function hideTabContent(a) {
+    for (let i = a; i < tabContent.length; i++) {
+        tabContent[i].classList.remove('show-content');
+        tabContent[i].classList.add('hide-content');
+    }
+}
+hideTabContent(1);
+
+function showTabContent(b) {
+    if (tabContent[b].classList.contains('hide-content')) {
+        tabContent[b].classList.remove('hide-content');
+        tabContent[b].classList.add('show-content');
+    }
+}
+
+btnBox.addEventListener('click', function (event) {
+    let target = event.target;
+
+    if (target && target.classList.contains('prof-nav__link')) {
+        for (let i = 0; i < tabContent.length; i++) {
+            if (target == btn[i]) {
+                hideTabContent(0);
+                showTabContent(i);
+                break;
+            }
+        }
+    }
+});
+
+
+
+// кловировать блоки
+$(".profile-data").clone().appendTo(".mt1");
+$(".profile-data-contact").clone().appendTo(".mt2");
+$(".pay-address").clone().appendTo(".mt3");
+$(".profile-set-notifi").clone().appendTo(".mt4");
+
+
+$('.prof-nav__item').click(function () {
+    $('.prof-nav__item').removeClass('pr-ni-active');
+    $('.prof-nav__item').removeClass('it-act');
+    $(this).toggleClass('pr-ni-active');
+    $(this).toggleClass('it-act');
+});

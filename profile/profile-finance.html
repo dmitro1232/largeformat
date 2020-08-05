@@ -604,7 +604,7 @@
 
 
                 <div class="mob-cr-page">
-                    <h2 class="title-02">Главная</h2>
+                    <h2 class="title-02">Финансы</h2>
                 </div>
 
 
@@ -696,7 +696,92 @@
                                 </ul>
                             </div>
 
-                            <button class="btn-04-m">сформировать счёт</button>
+                            <button type="button" class="btn-04-m" data-toggle="modal"
+                            data-target="#createinvo">сформировать счёт</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade show" id="createinvo" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content cust-modal3">
+                                        <div class="mod-t">
+                                            <h5 class="title-02" id="exampleModalLongTitle">Формирование счёта</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><img src="../img/icons/close.svg" alt=""></span>
+                                            </button>
+                                        </div>
+
+
+
+                                        <div class="body-mod">
+
+                                            <div class="t-m-hl">
+                                                <div>
+                                                    <h4 class="title-04">Плательщик</h4>
+                                                    <select class="custselect" name="" id="">
+                                                        <img src="../img/icons/ar-sel.svg" alt="">
+                                                        <option value="">ТОО «Рога и Копыта» 1</option>
+                                                        <option value="">ТОО «Рога и Копыта» 2</option>
+                                                        <option value="">ТОО «Рога и Копыта» 3</option>
+                                                        <option value="">ТОО «Рога и Копыта» 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="payer">
+                                                    <h4 class="title-04">Получатель</h4>
+                                                    <div class="payer__name">ТОО «Ак Group»</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="list-c-orders">
+                                                <div class="lscd0">
+                                                    <table class="md-invoice-cr">
+                                                        <tr class="thdta">
+                                                            <th>Название</th>
+                                                            <th>Кол-во, шт.</th>
+                                                            <th>Сумма, гр.</th>
+                                                        </tr>
+                                                        <tr class="tbod">
+                                                            <td class=""><input type="text" class="input-1"></td>
+                                                            <td class="ssgg0"><input type="text" class="input-1"></td>
+                                                            <td class="ssgg0"><input type="text" class="input-1"></td>
+                                                            <td class="addline-wrp"><button class="removeline"></button></td>
+                                                        </tr>
+                                                    
+                                                        <tr class="tbod">
+                                                            <td></td>
+                                                            <td class="ssgg0"></td>
+                                                            <td class="ssgg0"></td>
+                                                            <td class="addline-wrp"><button class="addline"></button></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="sum-cr-inv">
+                                                <div class="sum-cr-inv__sum text-02">
+                                                    Общая стоимость:
+
+                                                    <div class="title-02 money">32 000  ₴</div>
+                                                </div>
+
+                                                <div class="invcreated__get">
+                                                    <p class="chbx">
+                                                        <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox"
+                                                            value="value4">
+                                                        <label for="styled-checkbox-4">Отправить на e-mail</label>
+                                                    </p>
+                                                    <p class="fr-hd"><input class="input-1" type="email"
+                                                            placeholder="user@server.com"></p>
+                                                </div>
+                                            </div>
+
+                                            <p class="get-invc"><button class="btn-01-m">Скачать счет</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- docs -->
 
@@ -760,12 +845,14 @@
                             </tr>
                             <tr>
                                 <td data-th="Сумма"><span class="st-down">10 000 ₴</span></td>
-                                <td data-th="Операция">Оплата заказа <span class="ord-l"><a href="#!" class="link-11"># 5625</a></span></td>
+                                <td data-th="Операция">Оплата заказа <span class="ord-l"><a href="#!" class="link-11">#
+                                            5625</a></span></td>
                                 <td data-th="Дата">17 марта 2020 г.</td>
                             </tr>
                             <tr>
                                 <td data-th="Сумма"><span class="st-down">10 000 ₴</span></td>
-                                <td data-th="Операция">Оплата заказа <span class="ord-l"><a href="#!" class="link-11"># 5625</a></span></td>
+                                <td data-th="Операция">Оплата заказа <span class="ord-l"><a href="#!" class="link-11">#
+                                            5625</a></span></td>
                                 <td data-th="Дата">16 марта 2020 г.</td>
                             </tr>
                             <tr>
