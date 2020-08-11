@@ -1341,13 +1341,38 @@ button {
       right: -3px;
       top: 0; }
 
+.mt0,
 .mt1,
 .mt2,
 .mt3,
 .mt4 {
   display: none; }
 
+.profile-company {
+  margin-left: 100px;
+  position: relative; }
+  .profile-company input,
+  .profile-company select {
+    width: 100%; }
+  .profile-company__flx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .profile-company__left {
+    width: 50%; }
+  .profile-company__right {
+    width: 40%; }
+  .profile-company .pc-desc {
+    margin-top: 35px; }
+  .profile-company .save-ch {
+    float: right;
+    margin-top: 20px; }
+
 .profile-data {
+  display: none;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1498,6 +1523,8 @@ button {
   display: none; }
 
 @media screen and (max-width: 1200px) {
+  .profile-company {
+    margin-left: 0; }
   .profile-data {
     margin-left: 0; }
     .profile-data__left {
@@ -1506,6 +1533,16 @@ button {
       width: 40%; } }
 
 @media screen and (max-width: 992px) {
+  .profile-company__flx {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .profile-company__left {
+    width: 100%; }
+  .profile-company__right {
+    margin-top: 30px;
+    width: 100%; }
   .profile-data__left {
     width: 100%; }
   .profile-data__right {
@@ -1521,6 +1558,7 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .profile-company,
   .profile-data-contact,
   .pay-address,
   .profile-set-notifi {
@@ -1539,21 +1577,6 @@ button {
       color: #2E2E2E !important; }
     .prof-nav .li-active::after {
       display: none !important; }
-  .mt1,
-  .mt2,
-  .mt3,
-  .mt4 {
-    display: block; }
-  .mt1 .profile-data {
-    display: block; }
-  .mt2 .profile-data-contact {
-    display: block; }
-  .mt3 .pay-address {
-    display: block; }
-  .mt4 .profile-set-notifi {
-    display: block; }
-  .mts {
-    margin-top: 40px; }
   .prof-nav__item {
     overflow: hidden;
     height: auto !important;
@@ -1586,10 +1609,6 @@ button {
     .pr-ni-active:nth-child(4) {
       overflow: hidden;
       min-height: 490px; }
-  .profile-data-contact,
-  .pay-address,
-  .profile-set-notifi {
-    margin-left: 0 !important; }
   .prof-nav__item {
     border-bottom: 1px solid #E8E8E8;
     margin: 0 !important;
@@ -1613,7 +1632,39 @@ button {
   .it-act a::after {
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg); } }
+    transform: rotate(-180deg); }
+  .profile-data .profile-data__ch-pass div {
+    width: 50%; }
+  .profile-data__right {
+    width: 100%; }
+    .profile-data__right div {
+      width: 100%; }
+  .profile-company,
+  .profile-data-contact,
+  .pay-address,
+  .profile-set-notifi {
+    margin-left: 0px !important;
+    min-width: 100% !important; }
+  .mts {
+    min-width: 100%; }
+  .mt0,
+  .mt1,
+  .mt2,
+  .mt3,
+  .mt4 {
+    display: block; }
+  .mt0 .profile-company {
+    display: block; }
+  .mt1 .profile-data {
+    display: block; }
+  .mt2 .profile-data-contact {
+    display: block; }
+  .mt3 .pay-address {
+    display: block; }
+  .mt4 .profile-set-notifi {
+    display: block; }
+  .mts {
+    margin-top: 40px; } }
 
 @media (max-width: 950px) {
   .table-wrap {

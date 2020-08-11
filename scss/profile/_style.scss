@@ -1419,6 +1419,7 @@ $breakpoint-alpha: 480px;
     }
 }
 
+.mt0,
 .mt1,
 .mt2,
 .mt3,
@@ -1429,7 +1430,39 @@ $breakpoint-alpha: 480px;
 // END prof-nav
 // END prof-nav
 // END prof-nav
+
+
+
+.profile-company{
+    margin-left: 100px;
+    position: relative;
+    input,
+    select{
+        width: 100%;
+    }
+    &__flx{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        width: 50%;
+    }
+    &__right{
+        width: 40%;
+    }
+    .pc-desc{
+        margin-top: 35px;
+    }
+    .save-ch{
+        float: right;
+        margin-top: 20px;
+    }
+}
+
+
+
 .profile-data {
+    display: none;
     .tb-fl-fir{
         display: flex;
     }
@@ -1628,6 +1661,9 @@ $breakpoint-alpha: 480px;
 }
 
 @media screen and (max-width: 1200px) {
+    .profile-company{
+        margin-left: 0;
+    }
     .profile-data{
         margin-left: 0;
         &__left {
@@ -1639,6 +1675,18 @@ $breakpoint-alpha: 480px;
     }
 }
 @media screen and (max-width: 992px) {
+    .profile-company{
+        &__flx{
+            flex-direction: column;
+        }
+        &__left{
+            width: 100%;
+        }
+        &__right{
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
     .profile-data{
         &__left {
             width: 100%;
@@ -1660,6 +1708,7 @@ $breakpoint-alpha: 480px;
         flex-direction: column;
     }
 
+    .profile-company,
     .profile-data-contact,
     .pay-address,
     .profile-set-notifi{
@@ -1687,36 +1736,6 @@ $breakpoint-alpha: 480px;
             }
         }
     }
-    .mt1,
-    .mt2,
-    .mt3,
-    .mt4{
-        display: block;
-    }
-    .mt1{
-        .profile-data{
-            display: block;
-        }
-    }
-    .mt2{
-        .profile-data-contact{
-            display: block;
-        }
-    }
-    .mt3{
-        .pay-address{
-            display: block;
-        }
-    }
-    .mt4{
-        .profile-set-notifi{
-            display: block;
-        }
-    }
-    .mts{
-        margin-top: 40px;
-    }
-
     .prof-nav__item{
         overflow: hidden;
         height: auto !important;
@@ -1746,11 +1765,6 @@ $breakpoint-alpha: 480px;
             min-height: 490px;
         }
     }
-    .profile-data-contact,
-    .pay-address,
-    .profile-set-notifi{
-        margin-left: 0 !important;
-    }
     .prof-nav__item{
         border-bottom: 1px solid #E8E8E8;
         margin: 0 !important;
@@ -1778,5 +1792,64 @@ $breakpoint-alpha: 480px;
                 transform: rotate(-180deg);
             }
         }
+    }
+
+    .profile-data{
+        .profile-data__ch-pass{
+            div{
+                width: 50%;
+            }
+        }
+        &__right{
+            width: 100%;
+            div{
+                width: 100%;
+            }
+        }
+    }
+    .profile-company,
+    .profile-data-contact,
+    .pay-address,
+    .profile-set-notifi{
+        margin-left: 0px !important;
+        min-width: 100% !important;
+    }
+    .mts{
+        min-width: 100%;
+    }
+    .mt0,
+    .mt1,
+    .mt2,
+    .mt3,
+    .mt4{
+        display: block;
+    }
+    .mt0{
+        .profile-company{
+            display: block;
+        }
+    }
+    .mt1{
+        .profile-data{
+            display: block;
+        }
+    }
+    .mt2{
+        .profile-data-contact{
+            display: block;
+        }
+    }
+    .mt3{
+        .pay-address{
+            display: block;
+        }
+    }
+    .mt4{
+        .profile-set-notifi{
+            display: block;
+        }
+    }
+    .mts{
+        margin-top: 40px;
     }
 }

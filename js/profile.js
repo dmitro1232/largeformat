@@ -103,7 +103,8 @@ btnBox.addEventListener('click', function (event) {
 
 
 
-// кловировать блоки
+// кловировать блоки в разделе Профиль
+$(".profile-company").clone().appendTo(".mt0");
 $(".profile-data").clone().appendTo(".mt1");
 $(".profile-data-contact").clone().appendTo(".mt2");
 $(".pay-address").clone().appendTo(".mt3");
@@ -116,3 +117,56 @@ $('.prof-nav__item').click(function () {
     $(this).toggleClass('pr-ni-active');
     $(this).toggleClass('it-act');
 });
+
+
+
+
+var windowsize = $(window).width();
+
+$(window).resize(function () {
+    var windowsize = $(window).width();
+});
+
+
+if (windowsize < 575){
+
+    $('#mt0').on('click', function () {
+        $('html,body').animate({
+            scrollTop: $(this).offset().top + "px"
+        }, {
+            duration: 50
+        });
+    });
+
+    $('#mt1').on('click', function () {
+        $('html,body').animate({
+            scrollTop: $(this).offset().top + "px"
+        }, {
+            duration: 50
+        });
+    });
+    
+    $('#mt2').on('click', function () {
+        $('html,body').animate({
+            scrollTop: $(this).offset().top + "px"
+        }, {
+            duration: 50
+        });
+    });
+    
+    $('#mt3').on('click', function () {
+        $('html,body').animate({
+            scrollTop: $(this).offset().top + "px"
+        }, {
+            duration: 50
+        });
+    });
+    
+    $('#mt4').on('click', function () {
+        $('html,body').animate({
+            scrollTop: $(this).offset().top + "px"
+        }, {
+            duration: 50
+        });
+    });
+}
