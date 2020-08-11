@@ -1592,23 +1592,9 @@ button {
     -ms-flex-direction: column;
     flex-direction: column; }
   .pr-ni-active {
-    min-height: 840px;
-    max-height: 800px;
-    -webkit-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease; }
-    .pr-ni-active:nth-child(1) {
-      overflow: hidden;
-      min-height: 870px; }
-    .pr-ni-active:nth-child(2) {
-      overflow: hidden;
-      min-height: 520px; }
-    .pr-ni-active:nth-child(3) {
-      overflow: hidden;
-      min-height: 560px; }
-    .pr-ni-active:nth-child(4) {
-      overflow: hidden;
-      min-height: 490px; }
+    min-height: auto 100%;
+    max-height: 10000px !important;
+    display: block; }
   .prof-nav__item {
     border-bottom: 1px solid #E8E8E8;
     margin: 0 !important;
@@ -1664,7 +1650,7 @@ button {
   .mt4 .profile-set-notifi {
     display: block; }
   .mts {
-    margin-top: 40px; } }
+    margin-top: 80px; } }
 
 @media (max-width: 950px) {
   .table-wrap {
