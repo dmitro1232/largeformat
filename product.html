@@ -429,13 +429,10 @@
 
                                     <div class="parameters__content">
                                         <div class="wrp-dh flx-btw-cen">
-                                            <span class="form-control__wrp">
-                                                <select class="form-control slct">
-                                                    <option>На пружине</option>
-                                                    <option>Без пружины</option>
-                                                </select>
-                                                <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
-                                            </span>
+                                            <select class="custselect" name="" id="">
+                                                <option value="">На пружине</option>
+                                                <option value="">Без пружины</option>
+                                            </select>
                                             <div class="gk-img">
                                                 <img src="img/news/post__3.png" alt="">
                                             </div>
@@ -455,13 +452,10 @@
                                         <div class="size">
                                             <p class="txt-4 str">Стандартный размер (Ш х В) мм *</p>
                                             <div class="size__standart flx">
-                                                <span class="form-control__wrp">
-                                                    <select class="form-control slct">
-                                                        <option>Брошюра Евро (99 х 210)</option>
-                                                        <option>Брошюра Евро (290 х 400)</option>
-                                                    </select>
-                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
-                                                </span>
+                                                <select class="custselect" name="" id="">
+                                                    <option value="">Брошюра Евро (99 х 210)</option>
+                                                    <option value="">Брошюра Евро (99 х 210)</option>
+                                                </select>
                                             </div>
                                             <p class="or txt-4 str">или</p>
                                             <p class="txt-4 str">Свой размер (Ш х В) мм</p>
@@ -497,22 +491,16 @@
                                     <div class="parameters__content">
                                         <div class="substrate">
                                             <div class="size__standart flx">
-                                                <span class="form-control__wrp">
-                                                    <select class="form-control slct">
-                                                        <option>С подложкой</option>
-                                                        <option>Без нее</option>
-                                                    </select>
-                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
-                                                </span>
+                                                <select class="custselect" name="" id="">
+                                                    <option value="">C подложкой</option>
+                                                    <option value="">Без нее</option>
+                                                </select>
                                             </div>
                                             <div class="size__standart flx">
-                                                <span class="form-control__wrp">
-                                                    <select class="form-control slct">
-                                                        <option>Мелованная глянцевая 90 г</option>
-                                                        <option>Матовая 100 г</option>
-                                                    </select>
-                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
-                                                </span>
+                                                <select class="custselect" name="" id="">
+                                                    <option value="">Мелованная глянцевая 90 г</option>
+                                                    <option value="">Матовая 100 г</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -709,32 +697,22 @@
 
                                             <form action="">
                                                 <div class="flx-btw o-b">
-                                                    <span class="form-control__wrp">
-                                                        <select class="form-control slct">
-                                                            <option>Тема</option>
-                                                            <option>Тема 2</option>
-                                                        </select>
-                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg"
-                                                            alt="">
-                                                    </span>
-                                                    <span class="form-control__wrp">
-                                                        <select class="form-control slct">
-                                                            <option>Цвет</option>
-                                                            <option>цвет 2</option>
-                                                        </select>
-                                                        <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg"
-                                                            alt="">
-                                                    </span>
+                                                    <select class="custselect form-control" name="" id="">
+                                                        <option value="">Тема</option>
+                                                        <option value="">Тема 2</option>
+                                                    </select>
+
+                                                    <select class="custselect form-control" name="" id="">
+                                                        <option value="">Тема</option>
+                                                        <option value="">Тема 2</option>
+                                                    </select>
                                                 </div>
 
 
-                                                <span class="form-control__wrp">
-                                                    <select class="form-control slct">
-                                                        <option>Характеристика</option>
-                                                        <option>Характеристика-2</option>
-                                                    </select>
-                                                    <img class="form-control__wrp-ic" src="img/icons/ar-sel.svg" alt="">
-                                                </span>
+                                                <select class="custselect form-control charts" name="" id="">
+                                                    <option value="">Характеристика</option>
+                                                    <option value="">Характеристика</option>
+                                                </select>
                                             </form>
 
                                             <div class="tag-s">
@@ -1310,7 +1288,7 @@
     <script type="text/javascript" src="./bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/slider.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
-    
+
     <!-- <script type="text/javascript" src="./js/jquery.flexslider.js"></script> -->
     <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
     <script type='text/javascript' src='./unitegallery/dist/js/unitegallery.min.js'></script>
@@ -1318,58 +1296,57 @@
     <script src='./unitegallery/dist/themes/carousel/ug-theme-carousel.js' type='text/javascript'></script>
 
     <script type="text/javascript">
-        $( window ).on( "load", function() {
-            console.log( "window loaded" );
+        $(window).on("load", function () {
+            console.log("window loaded");
             var windowsize = $(window).width();
-       
+
             $(window).resize(function () {
-              var windowsize = $(window).width();
+                var windowsize = $(window).width();
             });
             if (windowsize < 992) {
-              function isIOSDevice(){
-             return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-            }
-            if(isIOSDevice()){
-                console.log("I am an IOS device!");
-                setTimeout(function(){
-                 $('.ug-button-fullscreen').css('visibility', 'hidden') ;
-                 $('.ug-button-fullscreen').addClass('importantRule') ;
-                }, 300);
+                function isIOSDevice() {
+                    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+                }
+                if (isIOSDevice()) {
+                    console.log("I am an IOS device!");
+                    setTimeout(function () {
+                        $('.ug-button-fullscreen').css('visibility', 'hidden');
+                        $('.ug-button-fullscreen').addClass('importantRule');
+                    }, 300);
+                } else {
+                    console.log("DEVICE WINDOWS");
+                }
             } else {
-                console.log("DEVICE WINDOWS");
-            }
-            }else{
 
             }
-         });
-
-          $(document).ready(function () {
-          var windowsize = $(window).width();
-         // console.log( "document loaded" );
-          $(window).resize(function () {
-              var windowsize = $(window).width();
-          });
-          if (windowsize < 992) {
-              function isIOSDevice(){
-             return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-            }
-            if(isIOSDevice()){
-                console.log("I am an IOS device !");
-                setTimeout(function(){
-                 $('.ug-button-fullscreen').css('visibility', 'hidden') ;
-                 $('.ug-button-fullscreen').addClass('importantRule') ;
-                }, 2000);
-              
-            } else {
-                console.log("DEVICE WINDOWS");
-            }
-
-          }else{
-
-          }
-
         });
 
+        $(document).ready(function () {
+            var windowsize = $(window).width();
+            // console.log( "document loaded" );
+            $(window).resize(function () {
+                var windowsize = $(window).width();
+            });
+            if (windowsize < 992) {
+                function isIOSDevice() {
+                    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+                }
+                if (isIOSDevice()) {
+                    console.log("I am an IOS device !");
+                    setTimeout(function () {
+                        $('.ug-button-fullscreen').css('visibility', 'hidden');
+                        $('.ug-button-fullscreen').addClass('importantRule');
+                    }, 2000);
+
+                } else {
+                    console.log("DEVICE WINDOWS");
+                }
+
+            } else {
+
+            }
+
+        });
     </script>
 
 

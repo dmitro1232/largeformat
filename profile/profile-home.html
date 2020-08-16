@@ -339,13 +339,11 @@
                                 <div class="step-cont">
                                     <div>
                                         <p class="str txt-4">В каком качестве Вы регистрируетесь? *</p>
-                                        <span class="select-3">
-                                            <select id="select-reg" required>
-                                                <option value="1">Оптовый покупатель</option>
-                                                <option value="2">Розничный покупатель</option>
-                                            </select>
-                                            <img class="fic" src="img/icons/ar-sel.svg" alt="">
-                                        </span>
+                                        <select class="custselect" id="select-reg" required>
+                                            <option value="1">Оптовый покупатель</option>
+                                            <option value="2">Розничный покупатель</option>
+                                        </select>
+                                        
                                     </div>
                                     <div class="s-line__ip fsa">
                                         <p class="str txt-4">Телефон *</p>
@@ -387,14 +385,12 @@
 
                                     <div class="s-line__ip">
                                         <p class="str txt-4">Род деятельности *</p>
-                                        <span class="select-3">
-                                            <select class="step-inputLong step_work">
-                                                <option>Сельское хозяйство</option>
-                                                <option>Сельское хозяйство2</option>
-                                                <option>Сельское хозяйство3</option>
-                                            </select>
-                                            <img class="fic" src="img/icons/ar-sel.svg" alt="">
-                                        </span>
+                                        <select class="custselect step-inputLong step_work" name="" id="">
+                                            <option value="">Сельское хозяйство</option>
+                                            <option value="">Сельское хозяйство2</option>
+                                            <option value="">Сельское хозяйство3</option>
+                                        </select>
+                                        
                                     </div>
 
                                     <div class="s-line">
@@ -483,8 +479,7 @@
                                     </div>
                                     <div class="s-line__ip">
                                         <p class="str txt-4">Адрес *</p>
-                                        <textarea class="textarea-1 step-textarea" placeholder="Киев, ул. Крещатик, 14">
-                                        </textarea>
+                                        <textarea class="textarea-1 step-textarea" placeholder="Киев, ул. Крещатик, 14"></textarea>
                                     </div>
                                     <div class="s-line">
                                         <div class="s-line__ip">
@@ -530,8 +525,7 @@
                                     </div>
                                     <div class="s-line__ip">
                                         <p class="str txt-4">Адрес *</p>
-                                        <textarea class="textarea-1 step-textarea" placeholder="Киев, ул. Крещатик, 14">
-                                        </textarea>
+                                        <textarea class="textarea-1 step-textarea" placeholder="Киев, ул. Крещатик, 14"></textarea>
                                     </div>
                                     <div>
                                         <button id="next-reg-3" class="btn-3 next rgb">Зарегистрироваться</button>

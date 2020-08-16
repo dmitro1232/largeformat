@@ -1819,6 +1819,9 @@ button {
 
 .step-cont {
   margin-bottom: 20px; }
+  .step-cont select {
+    width: 100%;
+    margin-bottom: 20px; }
 
 .nfzk {
   display: -webkit-box;
@@ -3052,6 +3055,8 @@ button {
       min-width: 100% !important; }
       .parameters .size .form-control__wrp .slct {
         min-width: 100% !important; }
+    .parameters .size select {
+      width: 100%; }
   .parameters .or {
     margin: 20px 0; }
   .parameters .size-form {
@@ -3063,8 +3068,9 @@ button {
   .parameters .substrate .form-control__wrp {
     margin: 10px 0;
     min-width: 100% !important; }
-    .parameters .substrate .form-control__wrp .slct {
-      min-width: 100% !important; }
+  .parameters select {
+    min-width: 100% !important;
+    margin-bottom: 20px; }
 
 .order-sec {
   margin-top: 50px !important; }
@@ -3511,20 +3517,8 @@ button {
   margin-top: 40px; }
   .prm__it {
     width: 49%; }
-    .prm__it .select-2 {
-      display: block;
-      margin-top: 10px !important;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .prm__it .select-2 select {
-        width: 100%; }
+    .prm__it select {
+      width: 100%; }
 
 .o-info {
   display: -webkit-box;
@@ -3673,6 +3667,9 @@ button {
 .step-content {
   margin: 80px 0;
   padding-bottom: 60px; }
+  .step-content select {
+    width: 100%;
+    margin-bottom: 20px; }
 
 .obrz {
   display: -webkit-box;
@@ -4071,14 +4068,11 @@ button {
       border: transparent;
       outline: 0 !important;
       -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0); }
-      .temp-filt__set .form-control__wrp {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        .temp-filt__set .form-control__wrp-ic {
-          position: relative;
-          right: 25px; }
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+      width: 45%;
+      padding-left: 15px; }
+    .temp-filt__set .charts {
+      min-width: 100%; }
     .temp-filt__set .form-control:focus {
       border: transparent;
       outline: 0 !important;

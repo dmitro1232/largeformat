@@ -180,15 +180,8 @@ $color2: #2173EF;
     &__it {
         width: 49%;
 
-        .select-2 {
-            display: block;
-            margin-top: 10px !important;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            select{
-                width: 100%;
-            }
+        select{
+            width: 100%;
         }
     }
 }

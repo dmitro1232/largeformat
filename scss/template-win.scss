@@ -158,15 +158,11 @@
             border: transparent;
             outline: 0 !important;
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
-
-            &__wrp {
-                display: flex;
-
-                &-ic {
-                    position: relative;
-                    right: 25px;
-                }
-            }
+            width: 45%;
+            padding-left: 15px;
+        }
+        .charts{
+            min-width: 100%;
         }
 
         .form-control:focus {
