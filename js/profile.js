@@ -1,172 +1,203 @@
-$('.profile-menu__item').click(function () {
-    $('.profile-menu__item').removeClass('item-active');
-    $(this).toggleClass('item-active');
-});
+$(document).ready(function () {
+    $('.profile-menu__item').click(function () {
+        $('.profile-menu__item').removeClass('item-active');
+        $(this).toggleClass('item-active');
+    });
 
 
-$('.lk-mob-btn').click(function () {
-    $('.profile-menu').toggleClass('profile-menu-mobactive');
-    $('.shadw').toggleClass('shadw-active');
-});
-$('.mbclos').click(function () {
-    $('.profile-menu').removeClass('profile-menu-mobactive');
-    $('.shadw').removeClass('shadw-active');
-});
+    $('.lk-mob-btn').click(function () {
+        $('.profile-menu').toggleClass('profile-menu-mobactive');
+        $('.shadw').toggleClass('shadw-active');
+    });
+    $('.mbclos').click(function () {
+        $('.profile-menu').removeClass('profile-menu-mobactive');
+        $('.shadw').removeClass('shadw-active');
+    });
 
 
 
-$('.table-sort__head tr th').click(function () {
-    $(this).toggleClass('sort-active');
-});
+    $('.table-sort__head tr th').click(function () {
+        $(this).toggleClass('sort-active');
+    });
 
-$('.rwd-table tr th').click(function () {
-    $(this).toggleClass('sort-active');
-});
+    $('.rwd-table tr th').click(function () {
+        $(this).toggleClass('sort-active');
+    });
 
-// модалка, с инфой о заказе 
+    $('.support-table tr th').click(function () {
+        $(this).toggleClass('sort-active');
+    });
 
-$('.alert-ico').click(function () {
-    $('.alert-ico').removeClass('alert-ico-active');
-    $(this).toggleClass('alert-ico-active');
-    $('.alert-1').hide();
-    $(this).next().show();
-    // для мобилы 
-    $('.mob-table .alert-1').hide();
-    $(this).next().show();
-});
-$('.alert-1__close').click(function () {
-    $('.alert-ico-active').next().hide();
-    $('.alert-ico').removeClass('alert-ico-active');
-});
+    // модалка, с инфой о заказе 
 
-
-var windowsize = $(window).width();
-$(window).resize(function () {
-    var windowsize = $(window).width();
-});
-if (windowsize < 480) {
-    $('.showmob-tabme').click(function () {
-        $('.mob-table').css('display', 'flex');
-        $('.mob-table').hide();
+    $('.alert-ico').click(function () {
+        $('.alert-ico').removeClass('alert-ico-active');
+        $(this).toggleClass('alert-ico-active');
+        $('.alert-1').hide();
+        $(this).next().show();
+        // для мобилы 
+        $('.mob-table .alert-1').hide();
         $(this).next().show();
     });
-}
+    $('.alert-1__close').click(function () {
+        $('.alert-ico-active').next().hide();
+        $('.alert-ico').removeClass('alert-ico-active');
+    });
 
 
-
-$('#styled-checkbox-4').on('click', function () {
-    if ($(this).is(':checked')) {
-        $('.fr-hd').toggleClass('fr-hd-active');
-    } else {
-        $('.fr-hd').removeClass('fr-hd-active');
+    var windowsize = $(window).width();
+    $(window).resize(function () {
+        var windowsize = $(window).width();
+    });
+    if (windowsize < 480) {
+        $('.showmob-tabme').click(function () {
+            $('.mob-table').css('display', 'flex');
+            $('.mob-table').hide();
+            $(this).next().show();
+        });
     }
-})
 
 
-$('.prof-nav__item').click(function () {
-    $('.prof-nav__item').removeClass('li-active');
-    $(this).toggleClass('li-active');
-});
 
-let btnBox = document.querySelector('.prof-nav__list'),
-    btn = document.querySelectorAll('.prof-nav__link'),
-    tabContent = document.querySelectorAll('.tab-content');
+    $('#styled-checkbox-4').on('click', function () {
+        if ($(this).is(':checked')) {
+            $('.fr-hd').toggleClass('fr-hd-active');
+        } else {
+            $('.fr-hd').removeClass('fr-hd-active');
+        }
+    })
 
-function hideTabContent(a) {
-    for (let i = a; i < tabContent.length; i++) {
-        tabContent[i].classList.remove('show-content');
-        tabContent[i].classList.add('hide-content');
-    }
-}
-hideTabContent(1);
 
-function showTabContent(b) {
-    if (tabContent[b].classList.contains('hide-content')) {
-        tabContent[b].classList.remove('hide-content');
-        tabContent[b].classList.add('show-content');
-    }
-}
+    $('.prof-nav__item').click(function () {
+        $('.prof-nav__item').removeClass('li-active');
+        $(this).toggleClass('li-active');
+    });
 
-btnBox.addEventListener('click', function (event) {
-    let target = event.target;
+    let btnBox = document.querySelector('.prof-nav__list'),
+        btn = document.querySelectorAll('.prof-nav__link'),
+        tabContent = document.querySelectorAll('.tab-content');
 
-    if (target && target.classList.contains('prof-nav__link')) {
-        for (let i = 0; i < tabContent.length; i++) {
-            if (target == btn[i]) {
-                hideTabContent(0);
-                showTabContent(i);
-                break;
-            }
+    function hideTabContent(a) {
+        for (let i = a; i < tabContent.length; i++) {
+            tabContent[i].classList.remove('show-content');
+            tabContent[i].classList.add('hide-content');
         }
     }
-});
+    hideTabContent(1);
+
+    function showTabContent(b) {
+        if (tabContent[b].classList.contains('hide-content')) {
+            tabContent[b].classList.remove('hide-content');
+            tabContent[b].classList.add('show-content');
+        }
+    }
+
+    btnBox.addEventListener('click', function (event) {
+        let target = event.target;
+
+        if (target && target.classList.contains('prof-nav__link')) {
+            for (let i = 0; i < tabContent.length; i++) {
+                if (target == btn[i]) {
+                    hideTabContent(0);
+                    showTabContent(i);
+                    break;
+                }
+            }
+        }
+    });
 
 
 
-// кловировать блоки в разделе Профиль
-$(".profile-company").clone().appendTo(".mt0");
-$(".profile-data").clone().appendTo(".mt1");
-$(".profile-data-contact").clone().appendTo(".mt2");
-$(".pay-address").clone().appendTo(".mt3");
-$(".profile-set-notifi").clone().appendTo(".mt4");
+    // кловировать блоки в разделе Профиль
+    $(".profile-company").clone().appendTo(".mt0");
+    $(".profile-data").clone().appendTo(".mt1");
+    $(".profile-data-contact").clone().appendTo(".mt2");
+    $(".pay-address").clone().appendTo(".mt3");
+    $(".profile-set-notifi").clone().appendTo(".mt4");
 
 
-$('.prof-nav__item').click(function () {
-    $('.prof-nav__item').removeClass('pr-ni-active');
-    $('.prof-nav__item').removeClass('it-act');
-    $(this).toggleClass('pr-ni-active');
-    $(this).toggleClass('it-act');
-});
+    $('.prof-nav__item').click(function () {
+        $('.prof-nav__item').removeClass('pr-ni-active');
+        $('.prof-nav__item').removeClass('it-act');
+        $(this).toggleClass('pr-ni-active');
+        $(this).toggleClass('it-act');
+    });
 
 
 
 
-var windowsize = $(window).width();
-
-$(window).resize(function () {
     var windowsize = $(window).width();
+
+    $(window).resize(function () {
+        var windowsize = $(window).width();
+    });
+
+
+    if (windowsize < 575) {
+
+        $('#mt0').on('click', function () {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top + "px"
+            }, {
+                duration: 50
+            });
+        });
+
+        $('#mt1').on('click', function () {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top + "px"
+            }, {
+                duration: 50
+            });
+        });
+
+        $('#mt2').on('click', function () {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top + "px"
+            }, {
+                duration: 50
+            });
+        });
+
+        $('#mt3').on('click', function () {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top + "px"
+            }, {
+                duration: 50
+            });
+        });
+
+        $('#mt4').on('click', function () {
+            $('html,body').animate({
+                scrollTop: $(this).offset().top + "px"
+            }, {
+                duration: 50
+            });
+        });
+    }
+
 });
-
-
-if (windowsize < 575){
-
-    $('#mt0').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $(this).offset().top + "px"
-        }, {
-            duration: 50
-        });
-    });
-
-    $('#mt1').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $(this).offset().top + "px"
-        }, {
-            duration: 50
-        });
-    });
-    
-    $('#mt2').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $(this).offset().top + "px"
-        }, {
-            duration: 50
-        });
-    });
-    
-    $('#mt3').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $(this).offset().top + "px"
-        }, {
-            duration: 50
-        });
-    });
-    
-    $('#mt4').on('click', function () {
-        $('html,body').animate({
-            scrollTop: $(this).offset().top + "px"
-        }, {
-            duration: 50
-        });
-    });
+// загрузка файла 
+$('.filenamesect').hide();
+function myFunction() {
+    var x = document.getElementById("myFile");
+    var txt = "";
+    if ('files' in x) {
+        if (x.files.length == 0) {} else {
+            for (var i = 0; i < x.files.length; i++) {
+                var file = x.files[i];
+                if ('name' in file) {
+                    txt += file.name;
+                    $('.filenamesect').show();
+                }
+            }
+        }
+    } 
+    document.getElementById("filename").innerHTML = txt;    
 }
+// удаление загрузки файла 
+document.getElementById("removefile").addEventListener("click", function () {
+    document.getElementById("myFile").value = "";
+    $('.filenamesect').hide(); 
+}, false);
+// END загрузки и удаления файла 

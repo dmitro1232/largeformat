@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
 
 
     //login registration forms
@@ -16,7 +16,7 @@ $(document).ready(function () {
         $('.login').show();
         $('.pass-reset').hide();
     });
-    
+
     $('.registration').click(function () {
         $('.lsflx').hide();
         $('.from-reg').show();
@@ -35,7 +35,7 @@ $(document).ready(function () {
         var value = $('#select-reg').val();
         if (
             value == 2
-        ){
+        ) {
             $('.reg-step-2-roz').show();
 
         } else {
